@@ -166,3 +166,118 @@ function getElementWidth(content, padding, border) {
 console.log(getElementWidth("50px", "8px", "4px")); // 74
 console.log(getElementWidth("60px", "12px", "8.5px")); // 101
 console.log(getElementWidth("200px", "0px", "0px")); // 200
+///////////////////////////////////////////////////////////////////
+
+
+function getPrice(subscription) {
+    let prais = 0;
+    if (subscription === "pro") {
+        prais = 100;
+       
+
+    }
+    return prais;
+}
+console.log(getPrice("pro"));
+console.log(getPrice("free"));
+
+// function checkAge(age) {
+//     if (age >= 18) {
+//       console.log("You are an adult");;
+    
+//     }  else {
+//         console.log("No adult");
+//     }
+//     }
+//     //checkAge(20);
+//     console.log(checkAge(17));
+
+function checkStorage(available, ordered) {
+    if (available >= ordered) {
+      console.log("Order is processed, our manager will contact you")
+    } else {
+      console.log("Not enough goods in stock!")
+    }
+  }
+  checkStorage(10, 50);
+  checkStorage(100, 130);
+checkStorage(200, 20);
+checkStorage(200, 150);
+checkStorage(150, 180);
+/////////////////////////////////////////////////////////////////
+
+function checkPassword(password) {
+    const correctPassword = "jqueryismyjam";
+    return correctPassword === password ? "Access granted" : "Access denied, wrong password!";
+  }
+  console.log(checkPassword("jqueryismyjam"));
+  console.log(checkPassword("angul4r1sl1f3"));
+  console.log(checkPassword("r3actsux"));
+  ////////////////////////////////////////////////////////////////////////
+
+  function getSubscriptionPrice(type) {
+    switch (type) {
+      case "starter":
+        console.log(0);
+        break;
+      case "professional":
+        console.log(20);
+        break;
+      case "organization":
+        console.log(50);
+        break;
+       default:
+      console.log("Invalid subscription type!"); 
+    }
+  }
+  console.log(getSubscriptionPrice("professional"));
+  console.log(getSubscriptionPrice("organization"));
+  ////////////////////////////////////////////////////////////////////////
+
+  function makeTransaction(quantity, pricePerDroid, customerCredits) {
+      const priceOrder = quantity * pricePerDroid;
+      if (customerCredits >= priceOrder ) {
+        return `You ordered ${quantity} droids worth ${priceOrder} credits!`;
+        
+      } else {
+        return "Insufficient funds!";
+      }
+  }
+
+  console.log(makeTransaction(5, 3000, 23000)); // "You ordered 5 droids worth 15000 credits!"
+console.log(makeTransaction(3, 1000, 15000)); // "You ordered 3 droids worth 3000 credits!"
+console.log(makeTransaction(10, 5000, 8000)); // "Insufficient funds!"
+console.log(makeTransaction(8, 2000, 10000)); // "Insufficient funds!"
+console.log(makeTransaction(10, 500, 5000)); // "You ordered 10 droids worth 5000 credits!"
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+function isNumberInRange(start, end, number) {
+    return start <= number && end >= number;
+      
+    
+  }
+  console.log(isNumberInRange(10, 30, 17));
+  console.log(isNumberInRange(10, 30, 5));
+  isNumberInRange(20, 50, 24);
+  isNumberInRange(20, 50, 76);
+  ////////////////////////////////////////////////////////////////////////
+
+  function checkAccess(subType) {
+    return subType === "pro" || subType === "vip";
+  }
+  console.log(checkAccess("pro"));
+  console.log(checkAccess("starter"));
+  checkAccess("vip");
+ console.log( checkAccess("free"));
+ //////////////////////////////////////////////////////////////
+ const message = "Привіт як справи!";
+ console.log(message.toUpperCase());
+ ////////////////////////////////////////////////////////////////////
+   
+ function getSubstring(string, length) {
+    return string.slice(0, length);
+  }
+   console.log( getSubstring("Hello world", 3));
+  console.log(getSubstring("Hello world", 5));
+  console.log(getSubstring("Hello world", 8));
+  console.log(getSubstring("Hello world", 11));
+  //////////////////////////////////////////////////////////////////////
