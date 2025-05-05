@@ -702,4 +702,155 @@
 // console.log(getShippingCost("Jamaica")); // "Shipping to Jamaica will cost 120 credits"
 // console.log(getShippingCost("Sweden")); // "Sorry, there is no delivery to your country"
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const fruits = ["apple", "plum", "pear", "orange"];
+// const fruits = ["apple", "plum", "pear", "orange"];
+// const fruitsOrang = fruits[3];
+// console.log(fruitsOrang.toUpperCase());
+// fruits[0] = "fresa";
+// console.log(fruits);
+// const planets = [ ' Земля' , 'Марс' , 'Венера' ];
+// const planet = planets[planets.length -1]
+
+// console.log(planet);
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// function getLastElementMeta(array) {
+//     const indexArrey = array.length -1;
+//     const elementArray = array[indexArrey];
+//     return [indexArrey, elementArray];
+//   }
+//   console.log( getLastElementMeta(["apple", "peach", "pear", "banana"]));
+//    getLastElementMeta(["apple", "peach", "pear"]);
+//    getLastElementMeta(["apple", "peach"]);
+//    getLastElementMeta(["apple"]);
+///////////////////////////////////////////////////////////////////////////////////////////
+  
+// function getExtremeElements(array) {
+//     const elementArray = array[array.length -1]
+//     return [array[0], elementArray];
+//   }
+//   getExtremeElements([1, 2, 3, 4, 5]);
+//      console.log(getExtremeElements(["Earth", "Mars", "Venus"]));
+//      getExtremeElements(["apple", "peach", "pear", "banana"]);
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    // const getExtremeElements = ["apple", "peach", "pear", "banana"];
+    // console.log(getExtremeElements.join());
+///////////////////////////////////////////////////////////////////////////
+// function getLength(array) {
+//     const arrayString = array.join("");
+    
+//     return arrayString.length;
+// }
+// console.log(getLength(["Mango", "hurries", "to", "the", "train"]));
+// getLength(["M", "a", "n", "g", "o"]);
+// getLength(["top", "picks", "for", "you"]);
+///////////////////////////////////////////////////////////////////////////////
+const words = ["JavaScript", "це", "класна", "мова"];
+const string = words.join(" ");
+console.log(string);
+/////////////////////////////////////////////////////////////////////
+const fruits = ["яблуко", "банан", "апельсин"];
+const allFruits = `Вивід: "${fruits.join(", ")}"`;
+console.log(allFruits);
+// Вивід: "яблуко, банан, апельсин"
+/////////////////////////////////////////////////////////////////////
+const phoneDigits = [0, 9, 7, 1, 2, 3, 4, 5, 6, 7];
+const numeroPhone = `${phoneDigits.slice(0, 3).join("")}-${phoneDigits.slice(3, 6).join("")}-${phoneDigits.slice(6, 10).join("")}`;
+console.log("Вивід:", numeroPhone);
+
+// Вивід: "097-123-4567"
+////////////////////////////////////////////////////////////////////////////////
+
+// Маємо масив частин адреси електронної пошти
+const emailParts = ["user", "example", "com"];
+// Завдання: з'єднай частини через символ "@", потім "." щоб отримати "user@example.com"
+const email = `${emailParts.slice(0, 1)}@${emailParts.slice(1, 2)}.${emailParts.slice(2, 3)}`;
+console.log(email);
+///////////////////////////////////////////////////////////////////////////////////////////////
+function calculateEngravingPrice(message, pricePerWord) {
+    const arrayWords = message.split(" ").length;
+    return arrayWords * pricePerWord;
+}
+console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
+console.log( calculateEngravingPrice("JavaScript is in my blood", 20));
+console.log( calculateEngravingPrice("Web-development is creative work", 40));
+ calculateEngravingPrice("Web-development is creative work", 20);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
