@@ -745,112 +745,415 @@
 // getLength(["M", "a", "n", "g", "o"]);
 // getLength(["top", "picks", "for", "you"]);
 ///////////////////////////////////////////////////////////////////////////////
-const words = ["JavaScript", "це", "класна", "мова"];
-const string = words.join(" ");
-console.log(string);
-/////////////////////////////////////////////////////////////////////
-const fruits = ["яблуко", "банан", "апельсин"];
-const allFruits = `Вивід: "${fruits.join(", ")}"`;
-console.log(allFruits);
-// Вивід: "яблуко, банан, апельсин"
-/////////////////////////////////////////////////////////////////////
-const phoneDigits = [0, 9, 7, 1, 2, 3, 4, 5, 6, 7];
-const numeroPhone = `${phoneDigits.slice(0, 3).join("")}-${phoneDigits.slice(3, 6).join("")}-${phoneDigits.slice(6, 10).join("")}`;
-console.log("Вивід:", numeroPhone);
+// const words = ["JavaScript", "це", "класна", "мова"];
+// const string = words.join(" ");
+// console.log(string);
+// /////////////////////////////////////////////////////////////////////
+// const fruits = ["яблуко", "банан", "апельсин"];
+// const allFruits = `Вивід: "${fruits.join(", ")}"`;
+// console.log(allFruits);
+// // Вивід: "яблуко, банан, апельсин"
+// /////////////////////////////////////////////////////////////////////
+// const phoneDigits = [0, 9, 7, 1, 2, 3, 4, 5, 6, 7];
+// const numeroPhone = `${phoneDigits.slice(0, 3).join("")}-${phoneDigits.slice(3, 6).join("")}-${phoneDigits.slice(6, 10).join("")}`;
+// console.log("Вивід:", numeroPhone);
 
-// Вивід: "097-123-4567"
+// // Вивід: "097-123-4567"
+// ////////////////////////////////////////////////////////////////////////////////
+
+// // Маємо масив частин адреси електронної пошти
+// const emailParts = ["user", "example", "com"];
+// // Завдання: з'єднай частини через символ "@", потім "." щоб отримати "user@example.com"
+// const email = `${emailParts.slice(0, 1)}@${emailParts.slice(1, 2)}.${emailParts.slice(2, 3)}`;
+// console.log(email);
+// ///////////////////////////////////////////////////////////////////////////////////////////////
+// function calculateEngravingPrice(message, pricePerWord) {
+//     const arrayWords = message.split(" ").length;
+//     return arrayWords * pricePerWord;
+// }
+// console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
+// console.log( calculateEngravingPrice("JavaScript is in my blood", 20));
+// console.log( calculateEngravingPrice("Web-development is creative work", 40));
+//  calculateEngravingPrice("Web-development is creative work", 20);
+// ///////////////////////////////////////////////////////////////////////////////////////////
+// 
+// function getSlice(array, value) {
+//     const elementArray = array.indexOf(value);
+    
+//     if(elementArray === -1) {
+//         return "Елемент не знайшли!!!";
+//     }
+//     return array.slice(0, elementArray + 1);
+//   }
+
+
+// console.log(getSlice(["Mango", "Poly", "Ajax"], "Poly"));
+// console.log(getSlice(["Mango", "Poly", "Ajax"], "Ajax"));
+// getSlice(["Mango", "Poly", "Ajax"], "Mango");
+// getSlice(["Mango", "Poly", "Ajax"], "Jacob");
+// console.log(getSlice(["Mango", "Poly", "Ajax"], "Casey"));
+
 ////////////////////////////////////////////////////////////////////////////////
-
-// Маємо масив частин адреси електронної пошти
-const emailParts = ["user", "example", "com"];
-// Завдання: з'єднай частини через символ "@", потім "." щоб отримати "user@example.com"
-const email = `${emailParts.slice(0, 1)}@${emailParts.slice(1, 2)}.${emailParts.slice(2, 3)}`;
-console.log(email);
-///////////////////////////////////////////////////////////////////////////////////////////////
-function calculateEngravingPrice(message, pricePerWord) {
-    const arrayWords = message.split(" ").length;
-    return arrayWords * pricePerWord;
-}
-console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
-console.log( calculateEngravingPrice("JavaScript is in my blood", 20));
-console.log( calculateEngravingPrice("Web-development is creative work", 40));
- calculateEngravingPrice("Web-development is creative work", 20);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// function createArrayOfNumbers(min, max) {
+//   const arrayNumbers = [];
+//   for (let i = min; i <= max; i++) {
+//     arrayNumbers.push(i)
+//   }
+// return arrayNumbers;
+// }
+
+//  createArrayOfNumbers(1, 3);
+//    console.log(createArrayOfNumbers(14, 17));
+//    createArrayOfNumbers(29, 34);
+////////////////////////////////////////////////////////////////////////////////////
+// function slugify(title) {
+//     const arrayTitle = title.toLowerCase().split(" ");
+
+// return arrayTitle.join("-");
+// }
+
+
+// console.log(slugify("Arrays for beginners")); // "arrays-for-beginners"
+// console.log(slugify("English for developer")); // "english-for-developer"
+// console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"
+// console.log(slugify("How to become a JUNIOR developer in TWO WEEKS")); // "how-to-become-a-junior-developer-in-two-weeks"
+// ///////////////////////////////////////////////////////////////////////////////////
+
+// function makeArray(firstArray, secondArray, maxLength) {
+//      const array = firstArray.concat(secondArray);
+//      //console.log(array);
+//      return array.slice(0, maxLength);
+// }
+// console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)); // ["Mango", "Poly", "Ajax"]
+// console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4)); // ["Mango", "Poly", "Houston", "Ajax"]
+// console.log(makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3)); // ["Mango", "Ajax", "Chelsea"]
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2)); // ["Earth", "Jupiter"]
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4)); // ["Earth", "Jupiter", "Neptune", "Uranus"]
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0)); // []
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// function filterArray(numbers, value) {
+//    const array = [];
+//    for (let i = 0; i < numbers.length; i++) {
+    
+//     if (numbers[i] > value) {
+//         array.push(numbers[i])
+//     }
+//     }
+//    return array;
+// }
+// console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
+// console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5]
+// console.log(filterArray([1, 2, 3, 4, 5], 5)); // []
+// console.log(filterArray([12, 24, 8, 41, 76], 38)); // [41, 76]
+// console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
+/////////////////////////////////////////////////////////////////////////////////
+
+// function calculateTotalPrice(order) {
+//     let suma = 0;
+//       for (let i = 0; i < order.length; i++) {
+//         suma += order[i];
+//       }
+//       return suma;
+//     }
+//    console.log( calculateTotalPrice([12, 85, 37, 4]));
+//     console.log(calculateTotalPrice([164, 48, 291]));
+//     console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+///////////////////////////////////////////////////////////////////////////////////////////
+// function getEvenNumbers(start, end) {
+//     const evenNumbers = [];
+
+
+// //      if (typeof start !== "number" || typeof end !== "number") {
+// //        console.log("Введіть два числа");
+// //          return [];
+
+// //      }
+// //     for (let i = start; i <= end; i++) {
+// //       if (i % 2 === 0) {
+// //         evenNumbers.push(i);
+// //         }
+// //       }
+// //     return evenNumbers;
+// //     }
+// //   console.log(getEvenNumbers(2, 5));
+// //  console.log( getEvenNumbers(3, 11));
+// //   getEvenNumbers(6, 12);
+// //   getEvenNumbers(8, 8);
+// //   getEvenNumbers(7, 7);
+// // console.log(getEvenNumbers());
+//   //////////////////////////////////////////////////////////////////////////
+//   function checkStorage(storage, item) {
+//     const itemToLowerCase = item.toLowerCase();
+//     if (storage.includes(itemToLowerCase)) {
+//         return `${itemToLowerCase} is available to order!`;
+  
+//   } else {
+//     return "Sorry! We are out of stock!";
+//   }
+  
+// }  
+//   console.log( checkStorage(["apple", "plum", "pear"], "pLuM"));
+//     console.log(checkStorage(["apple", "plum", "pear"], "pear"));
+//    console.log( checkStorage(["apple", "plum", "pear"], "pEAr"));
+//     console.log(checkStorage(["apple", "plum", "pear"], "orange"));
+//     console.log(checkStorage(["apple", "plum", "pear"], "carrot"));
+/////////////////////////////////////////////////////////////////////////////
+
+// function getCommonElements(array1, array2) {
+//     const arrayNumbers = [];
+//     for (let i = 0; i < array1.length; i++) {
+//         if (array2.includes(array1[i])) {
+//             arrayNumbers.push(array1[i]);
+//         }
+//     }
+//   return arrayNumbers;
+// }
+//  console.table(getCommonElements([1, 2, 3], [2, 4]), [1, 2]);
+//       console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+//       getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]);
+//       getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]);
+//       getCommonElements([1, 2, 3], [10, 20, 30]);
+//////////////////////////////////////////////////////////////////////////////////
+// function calculateTotalPrice(order) {
+//     let suma = 0;
+//     for (const item of order) {
+//       suma += item;
+      //     }
+//     return suma;
+//   }
+//   console.log(calculateTotalPrice([12, 85, 37, 4]));
+//   calculateTotalPrice([164, 48, 291]);
+//   calculateTotalPrice([412, 371, 94, 63, 176]);
+//   calculateTotalPrice([]);
+///////////////////////////////////////////////////////////////////////////////////
+
+// function foo() {
+//     // У змінній args буде повноцінний масив з усіх аргументів
+//     const args = Array.from(arguments);
+//       return args.join(" , ");
+//       return args;
+//   }
+  
+//   console.log(foo(1, 2, 3)); // Поверне "1-2-3"
+  
+  
+
+// const a = [1, 2, 3,];
+// const b = a
+
+// a[1] = 500;
+// console.log("a", a);
+// console.log(a === b);
+
+// const makeArray = ["Mango", "Poly", "Houston", "Ajax", "Chelsea"];
+
+// for (let i = 0; i < makeArray.length; i++) {
+// console.table(`${i + 1}: -${makeArray[i]}`);
+// }
+////////////////////////////////////////////////////////////////////////////
+
+// const number = [1, 2, 5, 56, 7, 8, 10]
+// let total = 0;
+// for (let i = 0; i < number.length; i++) {
+//     if (!(number[i] % 2))
+//         total += number[i];
+// }
+
+// console.log(total);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Створіть масив styles з елементами 'jazz' і 'blues'
+// Додайте до кінця масиву елемент 'rock-n-roll' за допомогою відповідного методу масивів
+// Знайдіть елемент 'blues' у масиві та замініть його на 'classic', використовуючи JavaScript-код
+
+// Напишіть функцію logItems(array), яка приймає масив як аргумент
+// і виводить у консоль кожен його елемент у форматі:
+// "<номер елемента> - <значення елемента>".
+// Використайте цикл for для перебору елементів масиву.
+// Нумерація елементів повинна починатися з 1 (а не з 0).
  
+// const styles = ['jazz', 'blues'];
+// styles.push('rock-n-roll');
+// const nuwStyle = ["classic"];
+// //styles[1] = "classic";
+// const nuwStyles = nuwStyle.concat(styles);
+
+
+// const str = nuwStyles.indexOf("blues");
+// if (str !== -1) {
+//     nuwStyles[str] = "pop";
+// }
+// nuwStyles[str] = "pop";
+
+// //nuwStyles.shift();
+// //nuwStyles.pop();
+// console.log(nuwStyles);
+// function logItems(array) {
+//     for (let i = 0; i < array.length; i++) {
+//         console.log(`${i +1} - ${array[i]}`);
+//     }
+// }
+//logItems(styles)
+///////////////////////////////////////////////////////////////////////////////////////////
+
+// Напишіть функцію checkLogin(array), яка:
+// Приймає масив логінів як аргумент.
+// Запитує ім'я користувача через prompt.
+// Перевіряє, чи є введене ім'я у переданому масиві.
+// Якщо ім'я є в масиві – виводить повідомлення через alert: "Welcome, <name>!"
+// Якщо ім'я відсутнє – виводить повідомлення: "User not found".
+
+// const logins = ["Peter", "John", "Igor", "Sasha"];
+// function checkLogin(array) {
+//     const userName = prompt("Введи своє ім`я");
+//     if (userName === null || userName.trim() === "") {
+//         alert("Введення скасовано або порожнє");
+//         return;
+
+//     }
+
+//     if (array.includes(userName)) {
+//         alert (`"Welcome, ${userName}!"`);
+//     } else {
+//         alert ("User not found");
+//     }
+// }
+
+// const logins = ["Peter", "John", "Igor", "Sasha"];
+
+// checkLogin(logins);
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Напишіть функцію caclculateAverage(),
+// яка приймає довільну кількість
+// аргументів і повертає їхнє середнє значення.
+// Додайте перевірку, що аргументи - це числа.
+
+// function caclculateAverage(...arg) {
+//  for (let i ) {
+
+//  }
+// }
+
+// console.log(calculateAverage(10, 20, 30));       // 20
+// console.log(calculateAverage(5, "text", 15));    // 10
+// console.log(calculateAverage("a", "b"));         // "Жодного числа не передано."
+///////////////////////////////////////////////////////////////////////////////////////////////
+// const values = [2, 34, 56, 3, 5, 24, 1]; 
+// let min;
+// for (let i = 0; i < values.length; i++) {
+//     if (i === 0) {
+//         min = values[i];
+// } else if (values[i] < min) {
+//     min = values[i];
+
+// }
+// }
+// console.log(min);
+  ////////////////////////////////////////////////////////////////////////////////////////////
+
+//   function createReversedArray() {
+//     const arrayRevers = Array.from(arguments).toReversed();
+//     return arrayRevers;
+//   }
+//   console.log(createReversedArray(12, 85, 37, 4));
+//     console.log(createReversedArray(164, 48, 291));
+//     console.log(createReversedArray(412, 371, 94, 63, 176));
+/////////////////////////////////////////////////////////////////////////////////////
+
+
+
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["historical prose", "adventure"],
+//     rating: 8.38,
+//   };
+//   const keys = [];
+//   for (const key in book) {
+//     keys.push(key)
+//      // Ключ
+//     //console.log(book[key]);  // Значення властивості з таким ключем
+//   }
+//   const value = [];
+//   for (const key in book) {
+//     value.push(book[key]);
+
+//   }
+//   console.log(value);
+///////////////////////////////////////////////////////////////////////////////////
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["historical prose", "adventure"],
+//     rating: 8.38,
+//   };
+//   const keys = Object.keys(book);
+//   //console.log(keys); // ['title', 'author', 'genres', 'rating']
+//   for (const key of keys) {
+//     //console.log(book[key]);
+//   }
+///////////////////////////////////////////////////////////////////////
+// function countProps(object) {
+//    const keys = Object.keys(object);
+//    return keys.length;
+//   }
+  
+//   console.log(countProps({ name: "Mango", age: 2 }));
+//   console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
+///////////////////////////////////////////////////////////////////////////////////////////
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   };
+//   const keys = Object.keys(book);
+//   console.log(keys); // ["title", "author", "rating"]
+  
+//   const values = Object.values(book);
+//   console.log(values); // ["The Last Kingdom", "Bernard Cornwell", 8.38]
+  ////////////////////////////////////////////////////////////////////////////////////////
+  function countTotalSalary(salaries) {
+    let totalSalary = 0;
+    const array = Object.values(salaries);
+    for (const solary of array) {
+      totalSalary += solary;
+    }
+    return totalSalary;
+  }
+  console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }));
+  console.log(countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }));
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
