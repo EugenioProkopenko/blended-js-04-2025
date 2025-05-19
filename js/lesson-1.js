@@ -1113,47 +1113,732 @@
 //   const values = Object.values(book);
 //   console.log(values); // ["The Last Kingdom", "Bernard Cornwell", 8.38]
   ////////////////////////////////////////////////////////////////////////////////////////
-  function countTotalSalary(salaries) {
-    let totalSalary = 0;
-    const array = Object.values(salaries);
-    for (const solary of array) {
-      totalSalary += solary;
-    }
-    return totalSalary;
-  }
-  console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }));
-  console.log(countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }));
+//   function countTotalSalary(salaries) {
+//     let totalSalary = 0;
+//     const array = Object.values(salaries);
+//     for (const solary of array) {
+//       totalSalary += solary;
+//     }
+//     return totalSalary;
+//   }
+//   console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }));
+//   console.log(countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }));
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// const colors = [
+//     { hex: "#f44336", rgb: "244,67,54" },
+//     { hex: "#2196f3", rgb: "33,150,243" },
+//     { hex: "#4caf50", rgb: "76,175,80" },
+//     { hex: "#ffeb3b", rgb: "255,235,59" },
+//   ];
+//   const hexColors = [];
+//   const rgbColors = [];
+//   for (const color of colors) {
+//     hexColors.push(color.hex);
+//     rgbColors.push(color.rgb)
+//   }
+// console.log(hexColors);
+// console.log(rgbColors);
+///////////////////////////////////////////////////////////////////////////////////////
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// const books = [
+//     { title: "The Last Kingdom", author: "Bernard Cornwell" },
+//     { title: "Beside Still Waters", author: "Robert Sheckley" },
+//     { title: "The Dream of a Ridiculous Man", author: "Fyodor Dostoevsky" }
+//   ];
   
+//   const authorToSearchFor = "Robert Sheckley";
+  
+//   for (const book of books) {
+//       if(book.author === authorToSearchFor) {
+//           console.log(book);
+//           console.log(book.title)
+//           console.log(book.rating)
+//       }
+//   }
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// function getProductPrice(productName) {
+//     const products = [
+//       { name: "Radar", price: 1300, quantity: 4 },
+//       { name: "Scanner", price: 2700, quantity: 3 },
+//       { name: "Droid", price: 400, quantity: 7 },
+//       { name: "Grip", price: 1200, quantity: 9 },
+//     ];
+//     for (const product of products) {
+//       if (product.name === productName) {
+//         return product.price;
+//     } 
+//     }
+//   return null;
+// }
+// console.log(getProductPrice("prop"));
+//////////////////////////////////////////////////////////////////////////////////////////////
+// function getProductPrice(propName) {
+//     const products = [
+//       { name: "Radar", price: 1300, quantity: 4 },
+//       { name: "Scanner", price: 2700, quantity: 3 },
+//       { name: "Droid", price: 400, quantity: 7 },
+//       { name: "Grip", price: 1200, quantity: 9 },
+//     ];
+//     for (const product of products) {
+//         if (product.name === propName) {
+//             return product.price;
+//         }
+//     }
+//     return null;
+// }
+// console.log(getProductPrice("Radar"));
+//  console.log(getProductPrice("Grip"));
+// console.log(getProductPrice("Droid"));
+// console.log(getProductPrice("Engine"));
+/////////////////////////////////////////////////////////////////////////////////
+// const products = [
+//           { name: "Radar", price: 1300, quantity: 4 },
+//           { name: "Scanner", price: 2700, quantity: 3 },
+//           { name: "Droid", price: 400, quantity: 7 },
+//           { name: "Grip", price: 1200, quantity: 9 },
+//         ];
+//         const nameUser = [];
+//         for (const product of products) {
+//             nameUser.push(product.name);
+//        }
+// console.log(nameUser);
+// ///////////////////////////////////////////////////////////////////////
+// const books = [
+//     { title: "The Last Kingdom", author: "Bernard Cornwell", rating: 8.2 },
+//     { title: "Beside Still Waters", author: "Robert Sheckley", rating: 9 },
+//     { title: "The Dream of a Ridiculous Man", author: "Fyodor Dostoevsky", rating: 6.8 }
+//   ];
+//  let totalRating = 0;
+
+// for (const book of books) {
+//     totalRating += book.rating;
+// }
+
+// console.log(totalRating);
+// const averageRating = totalRating / books.length;
+// console.log(averageRating);
+/////////////////////////////////////////////////////////////////////////////
+
+// function getAllPropValues(propName) {
+//     const products = [
+//       { name: "Radar", price: 1300, quantity: 4 },
+//       { name: "Scanner", price: 2700, quantity: 3 },
+//       { name: "Droid", price: 400, quantity: 7 },
+//       { name: "Grip", price: 1200, quantity: 9 },
+//     ];
+//     const arrayValues = [];
+//     for ( const product of products) {
+//         //console.log(product.propName);
+//        if(propName in product) {
+//         arrayValues.push(product[propName]);
+//      }
+//     }
+//     return arrayValues;
+//   }
+//   console.log(getAllPropValues("name"));
+//   getAllPropValues("quantity");
+//   getAllPropValues("price");
+///////////////////////////////////////////////////////////////////////////
+// Напиши функцію getPricesAboveThreshold(products, threshold), 
+// яка повертає масив цін, більших за вказане значення.
+
+// const products = [
+//     { name: "Laptop", price: 1500 },
+//     { name: "Phone", price: 600 },
+//     { name: "Tablet", price: 800 },
+//   ];
+//   function getPricesAboveThreshold(products, threshold) {
+//     const array = [];
+//     for (const product of products ) {
+//         //console.log(product);
+//         if (product.price > threshold) {
+//             array.push(product.price);
+
+//         }
+
+//     }
+//     return array;
+  
+//     }
+//    console.log(getPricesAboveThreshold(products, 700)); // [1500, 800]  
+///////////////////////////////////////////////////////////////////////////////////
+// Напиши універсальну функцію getAllPropertyValues(array, prop),
+//  яка повертає всі значення заданої властивості з масиву об’єктів.
+
+// const books = [
+//     { title: "Book A", author: "Author A", pages: 100 },
+//     { title: "Book B", author: "Author B", pages: 200 },
+//     { title: "Book C", author: "Author C", pages: 150 },
+//   ];
+// function getAllPropertyValues(array, prop) {
+//     const keysValuesArrey = [];
+//     for (const arra of array) {
+//         keysValuesArrey.push(arra[prop]);
+// }
+//   return keysValuesArrey;
+
+// }
+//   console.log(getAllPropertyValues(books, "title")); // ["Book A", "Book B", "Book C"]
+// console.log(getAllPropertyValues(books, "pages")); // [100, 200, 150
+///////////////////////////////////////////////////////////////////////////////////////////////
+// Функція findProductNamesByQuantity(products, minQuantity) повертає назви товарів,
+//  у яких кількість більше або дорівнює minQuantity.
+
+//  const inventory = [
+//     { name: "Pen", quantity: 10 },
+//     { name: "Notebook", quantity: 3 },
+//     { name: "Pencil", quantity: 15 },
+//   ];
+//   function findProductNamesByQuantity(products, minQuantity) {
+//     const array = [];
+//     for (const item of products) {
+//         if (item.quantity >= minQuantity) {
+//             array.push(item.name);
+//         }
+//     }
+//     return array;
+//   }
+//   console.log(findProductNamesByQuantity(inventory, 5)); // ["Pen", "Pencil"]
+ ///////////////////////////////////////////////////////////////////////////////////////////////////
+//  Напиши функцію getAllAuthors(), яка повертає масив авторів з масиву книг.
+ 
+//  const books = [
+//     { title: "Book A", author: "Author A", pages: 100 },
+//     { title: "Book B", author: "Author B", pages: 200 },
+//     { title: "Book C", author: "Author C", pages: 150 },
+//   ];
+//   function getAllAuthors() {
+//    const booksAutor = [];
+//     for (const item of books) {
+//         booksAutor.push(item.author);
+//     }
+//     return booksAutor;
+//         } 
+//   console.log(getAllAuthors(books)); // )["Author A", "Author B", "Author C"] 
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["historical prose", "adventure"],
+//     rating: 8.38,
+//     user : { name: "Notebook",
+//          quantity: 3 
+//         },
+//   };
+// book.rating = 9;
+
+// console.log(book.user);
+////////////////////////////////////////////////////////////////////////////////////////
+
+// const customers = [
+//     { name: "Ivan", order: { product: "Mouse", quantity: 2 } },
+//     { name: "Olga", order: { product: "Keyboard", quantity: 1 } },
+//     { name: "Stepan", order: { product: "Monitor", quantity: 3 } },
+//   ];
+  
+//   function getAllProductNames(customers) {
+//     // Поверни масив назв продуктів
+//     const array = [];
+//     for (const customer of customers) {
+//         array.push(customer.order.product);
+//     }
+//     return array;
+//   }
+//   console.log(getAllProductNames(customers)); // ["Mouse", "Keyboard", "Monitor"]
+///////////////////////////////////////////////////////////////////////////////////////////
+// const clients = [
+//     { name: "Lena", order: { product: "Tablet", quantity: 1 } },
+//     { name: "Dima" },
+//     { name: "Nina", order: { product: "Phone", quantity: 2 } },
+//   ];
+  
+//   function getClientsWithOrders(clients, nombre) {
+//     // Поверни масив імен клієнтів, які мають замовлення
+//     const array = [];
+//          for (const client of clients) {
+//             if (client.name ===nombre && client.order !== undefined)
+//                array.push(client.name);
+//          }
+//         return array;
+//        }
+  
+  
+//   console.log(getClientsWithOrders(clients, "Lena")); // ["Lena", "Nina"]
+// const users = [
+//     { name: "Alice", age: 25 },
+//     { name: "Bob", age: 30 },
+//     { name: "Carol", age: 22 },
+//   ];
+//   function getAllNames(users) {
+//     const arrayNames = [];
+//     for (const user of users) { 
+//         arrayNames.push(user.name);
+
+
+//     }
+//     return arrayNames;
+//   }
+//   console.log(getAllNames(users)); // ["Alice", "Bob", "Carol"]
+////////////////////////////////////////////////////////////////////////////////////
+// function foo(key, value) {
+// return {
+//     [key]: value
+// }
+// }
+// console.log(foo("name", "Alice")); // {name: 'Alice'}
+///////////////////////////////////////////////////////////////////////
+
+// const users = { 
+//     name: "Alice", 
+//     age: 25,
+//     hobby: "JS",
+//     premium: true 
+// }
+// users.mood = "happy";
+
+// users.mood = "lalalal";
+
+// const keys = Object.keys(users);
+// //console.log(keys);
+// const value = Object.values(users);
+// //console.log(value);
+// for (const key of keys) {
+//     console.log(`${key}: ${users[key]}`);
+// }
+/////////////////////////////////////////////////////////////////////////////////
+
+
+
+// const colors = [
+//     { hex: "#f44336", rgb: "244,67,54" },
+//     { hex: "#2196f3", rgb: "33,150,243" },
+//     { hex: "#4caf50", rgb: "76,175,80" },
+//     { hex: "#ffeb3b", rgb: "255,235,59" },
+//   ];
+  
+//   const hexColors = [];
+//   const rgbColors = [];
+//   for (const color of colors) {
+//     hexColors.push(color.hex);
+//     rgbColors.push(color.rgb);
+//   }
+  
+// console.log(hexColors);
+// console.log(rgbColors);
+/////////////////////////////////////////////////////////////////////////////////////
+// function getAllPropValues(propName) {
+//     const products = [
+//       { name: "Radar", price: 1300, quantity: 4 },
+//       { name: "Scanner", price: 2700, quantity: 3 },
+//       { name: "Droid", price: 400, quantity: 7 },
+//       { name: "Grip", price: 1200, quantity: 9 },
+//     ];
+//     const arrayValues = [];
+//     for ( const product of products) {
+//         //arrayValues.push(product[propName])
+//       if(product[propName] !== undefined) {
+//         arrayValues.push(product[propName]);
+//       }
+    
+//     }
+//     return arrayValues;
+//   }
+//   console.log(getAllPropValues("name"));
+//   getAllPropValues("quantity");
+//   getAllPropValues("price");
+//   console.log(getAllPropValues("category"));
+//////////////////////////////////////////////////////////////////function calculateTotalPrice(productName) {
+  
+// function calculateTotalPrice(productName) {
+// const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+//    for (const product of products) {
+    
+//     if (product.name === productName) {
+//         return product.price * product.quantity;
+//     }
+//    }
+//    return "popoo";
+// }
+  
+//   console.log(calculateTotalPrice("Blaster"));
+// console.log(calculateTotalPrice("Radar"));
+// calculateTotalPrice("Droid");
+// calculateTotalPrice("Grip");
+// calculateTotalPrice("Scanner");
+
+/////////////////////////////////////////////////////////////////////////////////////
+// // ✅ Логічно й синтаксично згруповані сутності
+// const bookShelf = {
+//     books: ["The Last Kingdom", "Dream Guardian"],
+//     // Це метод об'єкта
+//     getBooks() {
+//       return "Returning all books";
+//     },
+//     // Це метод об'єкта
+//     addBook(bookName) {
+//           return `Adding book ${bookName}`;
+//     },
+//   };
+  
+//   // Виклики методів
+//   bookShelf.getBooks(); // поверне "Returning all books"
+//   console.log(bookShelf.addBook("New book 1")); // поверне "Adding book New book 1"
+//   bookShelf.addBook("New book 2"); // поверне "Adding book New book 2"
+//   ///////////////////////////////////////////////////////////////////////////////////////////////////////
+//   const atTheOldToad = {
+//     potions: [],
+//     getPotions() {
+//       return "List of all available potions";
+//     },
+//     addPotion(potionName) {
+//       return `Adding ${potionName}`;
+//     },
+//   }
+//   console.log(atTheOldToad.getPotions());
+//   console.log(atTheOldToad.addPotion("Невидімий"));
+//   console.log(atTheOldToad.addPotion("Сіла"));
+
+// const bookShelf = {
+//     books: ["The Last Kingdom", "The Mist"],
+//     getBooks() {
+//       console.log(this);
+//     },
+//   };
+  
+//   bookShelf.getBooks(); // {books: ["The Last Kingdom", "The Mist"], getBooks: f}
+  //////////////////////////////////////////////////////////////////////////
+//   const atTheOldToad = {
+//      potions: [],
+//      getPotions() {
+//        return "List of all available potions";
+//      },
+//      addPotion(potionName) {
+//        return `Adding ${potionName}`;
+//      },
+//    };
+//    console.log(atTheOldToad.addPotion("Invisibility"));
+//    console.log(atTheOldToad.addPotion("Power potion"));
+///////////////////////////////////////////////////////////////
+// const atTheOldToad = {
+//     potions: ["Speed potion", "Stone skin"],
+//     getPotions() {
+//       return this.potions;
+//     },
+//   };
+//   console.log(atTheOldToad.getPotions());
+//////////////////////////////////////////////////////////////
+// const bookShelf = {
+//     books: ["The Last Kingdom"],
+//     getShelf() {
+//         return this.books;
+    
+//     },
+//     addShelf(nameShelf) {
+//         this.books.push(nameShelf);
+//     },
+// };
+
+
+// bookShelf.addShelf("Harry Potter");
+// bookShelf.addShelf("1984");
+// console.log(bookShelf.getShelf());
+// /////////////////////////////////////////////////////////////////////////
+// const atTheOldToad = {
+//     potions: ["Speed potion", "Stone skin"],
+//     getPotions() {
+//         return this.potions;
+//     },
+//     addPotion(potionName) {
+//          this.potions.push(potionName);
+//     }
+// };
+// console.log(atTheOldToad.getPotions());
+// atTheOldToad.addPotion("Invisibility");
+// atTheOldToad.addPotion("Power potion");
+// console.log(atTheOldToad.getPotions());
+///////////////////////////////////////////////////////////////////
+
+
+// const atTheOldToad = {
+//     potions: [
+//       { name: "Speed potion", price: 460 },
+//       { name: "Stone skin", price: 520 },
+//     ],
+//     getPotions() {
+//       return this.potions;
+//     },
+//     addPotion(newPotion) {
+//       this.potions.push(newPotion);
+//     },
+//     getTotalPrice() {
+//       let total = 0;
+//       for (const potion of this.potions) {
+//         total += potion.price;
+        
+//       }
+//       return total;
+      
+//     },
+//   };
+//   console.log(atTheOldToad.getPotions());
+//   atTheOldToad.addPotion({ name: "Invisibility", price: 620 });
+//   atTheOldToad.addPotion({ name: "Power potion", price: 270 });
+//   console.log(atTheOldToad. getTotalPrice())//////////
+/////////////////////////////////////////////////////////////////////////////////
+// const bookShelf = {
+//     books: [
+//       { title: "The Last Kingdom", rating: 8 },
+//       { title: "The Mist", rating: 6 },
+//     ],
+//       changeRating(bookName, newRating) {
+//         for (const book of this.books) {
+//             if (book.title === bookName) {
+//                 book.rating = newRating;
+
+//             }
+
+//         }
+//       }
+//   };
+//   bookShelf.changeRating("The Mist", 9);
+//   bookShelf.changeRating("The Last Kingdom", 4);
+// console.log( bookShelf.books);
+//////////////////////////////////////////////////////////////////////////////
+
+// const atTheOldToad = {
+//     potions: [
+//       { name: "Speed potion", price: 460 },
+//       { name: "Stone skin", price: 520 },
+//     ],
+//     getPotions() {
+//         return this.potions;
+//     },
+//     updatePotionName(oldName, newName) {
+//         for (const potion of this.potions) {
+//             if (potion.name === oldName) {
+//                 potion.name = newName
+
+//             }
+
+//         }
+
+
+//     }
+// }
+// atTheOldToad.updatePotionName("Stone skin", "Invisibility");
+// console.log(atTheOldToad.getPotions());
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// function add(...args) {
+//     console.log(args);
+//     // let sum = 0;
+//     // for (const ar of args) {
+//     //     //console.log(ar);
+//     //   sum += ar;
+      
+//     // }
+//     // return sum;
+//   }
+//   //add(15, 27);
+//   //add(12, 4, 11, 48);
+//   console.log(add(32, 6, 13, 19, 8));
+//////////////////////////////////////////////////////
+// function multiply(first, second, ...args) {
+//     console.log(first, second, args);
+//   }
+  
+//   multiply(1, 2); // 1 2
+//   multiply(1, 2, 3); // 1 2 [3] 
+//   multiply(1, 2, 3, 4); // 1 2 [3, 4]
+///////////////////////////////////////////////////////
+// function addOverNum(value, ...args) {
+//     let sum = 0;
+//     for (const ar of args) {
+//       if (ar > value) {
+//         sum += ar;
+//       }
+      
+//     }
+//     return sum;
+//   }
+//   addOverNum(50, 15, 27);
+//   console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
+//////////////////////////////////////////////////////////////////////////////////
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+
+// const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores];
+// console.log(allScores);
+
+// const bestScore = Math.max(...allScores);
+// const worstScore =  Math.min(...allScores);
+// console.log(bestScore);
+// console.log(worstScore);
+///////////////////////////////////////////////////////////////////////////////
+// const defaultSettings = {
+//     theme: "light",
+//     public: true,
+//     withPassword: false,
+//     minNumberOfQuestions: 10,
+//     timePerQuestion: 60,
+//   };
+//   const overrideSettings = {
+//     public: false,
+//     withPassword: true,
+//     timePerQuestion: 30,
+//   };
+  
+//   const finalSettings = {...defaultSettings, ...overrideSettings};
+//   console.log(finalSettings);
+ /////////////////////////////////////////////////////////////////////////////////////////////// 
+// function isEnoughCapacity(products, containerSize) {
+//       let totalProducts = 0;
+// //       const values = Object.values(products);
+// //       //console.log(values);
+
+// //     for (const value of values) {
+// //             totalProducts += value;
+            
+
+               
+// //     }
+// //     return totalProducts <= containerSize;
+// // }
+// //  console.log(isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)); // true
+// // console.log(isEnoughCapacity({ apples: 4, grapes: 6, lime: 16 }, 12)); // false
+// //  console.log(isEnoughCapacity({ apples: 1, lime: 5, tomatos: 3 }, 14)); // true
+// //  console.log(isEnoughCapacity({ apples: 18, potatos: 5, oranges: 2 }, 7)); // false
+// // //////////////////////////////////////////////////////////////////////////////////
+//  function calcAverageCalories(days) {
+//     //const values = Object.values(days);
+//     if (days.length === 0) {
+//         return 0;
+
+//     }
+//     let totalClories = 0;
+//     for (const day of days) {
+//         totalClories += day.calories;
+
+//     }
+//     return totalClories / days.length;
+
+//  }
+
+// console.log(
+//   calcAverageCalories([
+//     { day: "monday", calories: 3010 },
+//     { day: "tuesday", calories: 3200 },
+//     { day: "wednesday", calories: 3120 },
+//     { day: "thursday", calories: 2900 },
+//     { day: "friday", calories: 3450 },
+//     { day: "saturday", calories: 3280 },
+//     { day: "sunday", calories: 3300 }
+//   ])
+// ); // 3180
+
+// console.log(
+//   calcAverageCalories([
+//     { day: "monday", calories: 2040 },
+//     { day: "tuesday", calories: 2270 },
+//     { day: "wednesday", calories: 2420 },
+//     { day: "thursday", calories: 1900 },
+//     { day: "friday", calories: 2370 },
+//     { day: "saturday", calories: 2280 },
+//     { day: "sunday", calories: 2610 }
+//   ])
+// ); // 2270
+
+// console.log(
+//   calcAverageCalories([])
+// ); // 0
+////////////////////////////////////////////////////////////////////////////////////
+// const profile = {
+//     username: "Jacob",
+//   playTime: 300,
+  
+//   getInfo() {
+//     return `${this.username} has ${this.playTime} active hours!`;
+//   },
+//   changeUsername(newName) {
+//     this.username = newName;
+
+//   },
+//   updatePlayTime(hours) {
+//     this.playTime += hours;
+//   }
+
+// };
+
+
+// console.log(profile.getInfo()); // "Jacob has 300 active hours!"
+
+// profile.changeUsername("Marco");
+// console.log(profile.getInfo()); // "Marco has 300 active hours!"
+
+// profile.updatePlayTime(20);
+// console.log(profile.getInfo()); // "Marco has 320 active hours!"
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const atTheOldToad = {
+//     potions: [
+//       { name: "Speed potion", price: 460 },
+//       { name: "Stone skin", price: 520 },
+//     ],
+//     getPotions() {
+//       return this.potions;
+//     },
+//     updatePotionName(oldName, newName) {
+//       for(const potion of this.potions)
+//         if(potion.name === oldName) {
+//            potion.name = newName;
+//         }
+//       return this.potions;
+//     },
+//   };
+//   atTheOldToad.updatePotionName("Stone skin", "Invisibility");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
