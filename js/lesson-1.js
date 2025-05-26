@@ -1783,46 +1783,506 @@
 // profile.updatePlayTime(20);
 // console.log(profile.getInfo()); // "Marco has 320 active hours!"
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Напишіть функцію calcTotalPrice(fruits, fruitName),
+// яка приймає массив об'єктів (fruits) і рядок з назвою фрукта (fruitName).
+// Функція рахує і повертає загальну вартість фрукта
+// з таким ім'ям, ціною та кількістю з об'єкта.
+
+// Зверніть увагу, що в масиві може бути кілька обʼєктів з однаковою 
+// назвою фрукта, це також треба урахувати.
+// const fruits = [
+//     { name: "Яблуко", price: 45, quantity: 7 },
+//     { name: "Апельсин", price: 60, quantity: 4 },
+//     { name: "Банан", price: 125, quantity: 8 },
+//     { name: "Груша", price: 350, quantity: 2 },
+//     { name: "Виноград", price: 440, quantity: 3 },
+//     { name: "Банан", price: 125, quantity: 3 },
+//   ];
+
+//  function calcTotalPrice(fruits, fruitName) {
+//    let total = 0; 
+//     for (const fruit of fruits) {
+//         if (fruit.name === fruitName) {
+//             total +=  fruit.price * fruit.quantity;
+
+//         } 
+//     }
+//     return total;
+//  }
 
 
+// console.log(calcTotalPrice(fruits, "Яблуко"));
+// console.log(calcTotalPrice(fruits, "Апельсин"));
+// console.log(calcTotalPrice(fruits, "Банан"));
+// console.log(calcTotalPrice(fruits, "Груша"));
+// console.log(calcTotalPrice(fruits, "Банан"));
+///////////////////////////////////////////////////////////////////
 
+// Напишіть функцію caclculateAverage(),
+// яка приймає довільну кількість
+// аргументів і повертає їхнє середнє значення.
+// Додайте перевірку, що аргументи - це числа.
 
+// function caclculateAverage(...args) {
+//     let sum = 0;
+//     let caunt = 0;
+//     for (const arg of args) {
+//         if (typeof arg !== "number") {
+//             continue;
+//         } 
+//            sum += arg;
+//            caunt += 1;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const atTheOldToad = {
-//     potions: [
-//       { name: "Speed potion", price: 460 },
-//       { name: "Stone skin", price: 520 },
-//     ],
-//     getPotions() {
-//       return this.potions;
-//     },
-//     updatePotionName(oldName, newName) {
-//       for(const potion of this.potions)
-//         if(potion.name === oldName) {
-//            potion.name = newName;
 //         }
-//       return this.potions;
-//     },
+//         return sum / caunt;
+        
+// }
+// console.log(caclculateAverage( "fjnsj", 1, 2, 3, 4) );
+///////////////////////////////////////////////////////////////////////////////
+// Напишіть функцію, яка сумуватиме сусідні числа 
+// і пушитиме їх в новий масив.
+
+// const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
+
+// уточнення: складати необхідно перше число з другим, потім друге - з третім, 
+// третє - з четвертим і так до кінця.
+// В результаті функція має повертати масив [33, 45, 39, 17, 25, 27, 29].
+// const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
+// function addAdjacentNumbers(args) {
+//     const array = [];
+//     /////
+//     // for (const arg of args) {
+//     //    array.push(arg[0] + arg[1]);
+//     //    array.push(arg[1] + arg[2]);
+//     //    array.push(arg[2] + arg[3]);
+//     //    array.push(arg[3] + arg[4]);
+//     //    array.push(arg[4] + arg[5]);
+//     //    array.push(arg[5] + arg[6]);
+//     //    array.push(arg[6] + arg[7]);
+//     //     }
+//     //     return array;
+//     ///
+//     for (let i = 0; i < args.length -1; i++) {
+//        array.push(args[i] + args[i + 1]);
+
+//     }
+//        return array; 
+
+//     }
+
+
+// console.log(addAdjacentNumbers(someArr));
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Напишіть функцію findSmallestNumber(numbers),
+// яка шукає найменше число в масиві.
+// Додайте перевірку, що функція отримує саме масив, і 
+// якщо функція отримує масив - поверніть з функції найменше число,
+// в іншому випадку - поверніть 'Sory, it is not an array!'.
+
+//  const numbers = [2, 5, 35, 56, 12, 24, 7, 1, 80, 3];
+
+// function findSmallestNumber(numbers) {
+//     let numberMin = numbers[0];
+//     if (!Array.isArray(numbers)) {
+//         return 'Sory, it is not an array!';
+
+// }
+//         for (let i = 0; i < numbers.length; ++i) {
+//             if (numbers[i] < numberMin) {
+//                 numberMin = numbers[i];
+//             }
+
+
+//         }
+//         return numberMin;
+//     } 
+// console.log(findSmallestNumber(numbers));
+////////////////////////////////////////////////////////////////////
+
+// Напишіть функцію findLongestWord(string), яка 
+// приймає довільний рядок, що складається лише зі слів, розділених
+// пробілами (параметр string), і повертатиме найдовше слово у реченні.
+
+// Скористайтесь цим прикладом виклику функції для перевірки її роботи:
+// console.log(findLongestWord("London is the capital of Great Britain")); // 'capital'
+// function findLongestWord(string) {
+//     const array = string.split(" ");
+// //console.log(array[3].length);
+// let longestWord = array[0];
+//    for (let i = 0; i < array.length; ++i) {
+//         if (array[i].length > longestWord.length) {
+//             longestWord = array[i];
+//         }
+// }
+//     return longestWord;
+// }
+// console.log(findLongestWord("London is the capital of Great Britain")); // 'capital'
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Напишіть скрипт, який для об'єкту user, послідовно:
+// 1 - додасть поле mood зі значенням 'happy',
+// 2 - замінить hobby на 'skydiving',
+// 3 - замінить значення premium на false,
+// 4 - виведе зміст об'єкта user у форматі
+// '<ключ>:<значення>' використовуя Object.keys() та for...of
+
+// const user = {
+//     name: "John",
+//     age: 20,
+//     hobby: "tenis",
+//     premium: true,
 //   };
-//   atTheOldToad.updatePotionName("Stone skin", "Invisibility");
+
+// user.mood = 'happy';
+// user.hobby = 'skydiving';
+// user.premium = false;
+// const keys = Object.keys(user);
+// for (const key of keys) {
+//    console.log(`${key}: ${user[key]}`);
+// }
+///////////////////////////////////////////////////////////////////////////////////////////////
+// const friends = [
+// //     { name: "Іван", age: 25, hobby: "футбол" },
+// //     { name: "Оля", age: 28, hobby: "читання" },
+// //     { name: "Макс", age: 22, hobby: "ігри" },
+// //     { name: "Анна", age: 30, hobby: "малювання" }
+// //   ];
+  
+
+
+// //   function showFriendInfo(amigos, nameFrend) {
+// // const array = [];
+// //     for (const amigo of amigos) {
+// //         if (amigo.age >= nameFrend) {
+// //             array.push(amigo);
+
+// //         }
+// //     }
+// //     return array;
+// //   }
+    
+// //   console.log(showFriendInfo(friends, 25));
+
+
+// // const counter = {
+// //     value: 45,
+// //      increment() {
+// //        this.value + 1;
+// //      },
+// //      decrement() {
+// //        this.value -1;
+// //      },
+// //      getValue() {
+// //        return this.value
+// //      }
+     
+// //    }
+   
+   
+// //    counter.increment();
+// //    counter.increment();
+// //    counter.decrement();
+// //    console.log(counter.getValue()); // 
+// ////////////////////////////////////////////////////////////////////
+// // const user = {
+// //     name: "Галина", 
+// //     messages: ["Привіт!", "Як справи?"],
+// //     addMessage(message) {
+// //       this.messages.push(message);
+      
+// //     },
+// //     getLastMessage() {
+// //       return this.messages[this.messages.length - 1];
+// //     }
+// //   }
+// //   user.addMessage("До побачення!");
+// //   user.addMessage("Ви бажаете щось придбати?");
+// //   console.log(user.getLastMessage()); // "Ви бажаете щось придбати?"
+// /**//////////////////////////////////////////////////////// */
+// const student = {
+//     name: "Олена",
+//     age: 19,
+//     major: "Комп'ютерні науки",
+//     isEnrolled: true,
+//     nuwName(cambioName) {
+//         this.name = cambioName;
+        
+
+
+//     }
+//   };
+//   const book = {
+//     name: "Місто",
+//     author: "Валер'ян Підмогильний",
+//     age: 27,
+//     isEnrolled: false
+//   };
+//   const friends = { 
+//     name: "Іван", 
+//     age: 25, 
+//     hobby: "футбол" };
+ 
+// book.bookCambioPleilist = student.nuwName;
+// friends.friendsCambio = student.nuwName;
+// student.nuwName("lalala");
+// console.log(student);
+// book.bookCambioPleilist("Село");
+// console.log(book);
+// friends.friendsCambio("Ilia");
+// console.log(friends.name);
+
+////////////////////////////////////////////////////////////
+// const shopA = ["хліб", "молоко", "яйця"];
+// const shopB = ["сир", "масло", "овочі"];
+
+// // 🔧 Твоє завдання:
+// // Створи масив allItems за допомогою spread-оператора
+// const allItems = [...shopA, ...shopB];
+// console.log(allItems); 
+// // ["хліб", "молоко", "яйця", "сир", "масло", "овочі"]
+/////////////////////////////////////////////////////////////
+// Створи новий об’єкт user, який об’єднує властивості з personalInfo та contactInfo за допомогою spread-оператора.
+
+// Не змінюй початкові об'єкти.
+
+// Додай нову властивість isOnline: true прямо в user.
+
+
+// cot personalInfo = {
+//     name: "Олег",
+//     age: 28
+//   };
+  
+//   const contactInfo = {
+//     email: "oleg@gmail.com",
+//     phone: "0987654321"
+//   };
+  
+// const user = {
+//     ...personalInfo,
+//     ...contactInfo
+
+// }
+
+
+// user.isOnline = true;
+// console.log(user);ns
+///////////////////////////////////////////////////////
+// const a = [{ a:" 2a" }, { b: "2b" }];
+// const b = [...a];
+// a[0].a = 100;
+// console.log("a", a);
+// console.log("b", b);
+// console.log(a === b);
+////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+// * Типів транзакцій всього два.
+// * Можна покласти чи зняти гроші з рахунку.
+// // */
+// const Transaction = {
+//  DEPOSIT: "deposit",
+//  WITHDRAW: "withdraw",
+// };
+ 
+//  /*
+//   * Кожна транзакція це об'єкт із властивостями: id, type та amount
+//   */
+ 
+//  const account = {
+//    // Поточний баланс рахунку
+//    balance: 0,
+ 
+//    // Історія транзакцій
+//    transactions: [],
+ 
+//    /*
+//     * Метод створює та повертає об'єкт транзакції.
+//     * Приймає суму та тип транзакції.
+//     */
+//    createTransaction(amount, type) {
+//     const obj = {id: amount, amount, type};
+//     return obj;
+    
+    
+//    },
+
+
+ 
+//    /*
+//     * Метод, що відповідає за додавання суми до балансу.
+//     * Приймає суму транзакції.
+//     * Викликає createTransaction для створення об'єкта транзакції
+//     * після чого додає його до історії транзакцій
+//     */
+//    deposit(amount) {
+//     this .balance += amount;
+//     const transaction = this.createTransaction(amount, Transaction.DEPOSIT);
+//      this.transactions.push(transaction);
+    
+    
+//    },
+ 
+//    /*
+//     * Метод, що відповідає за зняття суми з балансу.
+//     * Приймає суму транзакції.
+//     * Викликає createTransaction для створення об'єкта транзакції
+//     * після чого додає його до історії транзакцій.
+//     *
+//     * Якщо amount більше ніж поточний баланс, виводь повідомлення
+//     * про те, що зняття такої суми не можливе, недостатньо коштів.
+//     */
+//    withdraw(amount) {
+//     if(this.balance < amount) {
+//         console.log("Недостатньо коштів");
+//         return;
+
+//     }
+//     this.balance -= amount;
+//     const transaction = this.createTransaction(amount, Transaction.WITHDRAW);
+//     this.transactions.push(transaction);
+    
+//    },
+ 
+
+
+//    /*
+//     * Метод повертає поточний баланс
+//     */
+//    getBalance() {
+//      return this.balance;
+    
+//    },
+ 
+//    /*
+//     * Метод шукає та повертає об'єкт транзакції по id
+//     */
+//    getTransactionDetails(id) {
+//     for(const item of this.transactions ) {
+//         if(item.id === id) {
+//             return item;
+
+//         }
+
+
+//     }
+//     return "Not found";
+//    },
+  
+    
+ 
+//    /*
+//     * Метод повертає кількість коштів
+//     * певного типу транзакції з усієї історії транзакцій
+//     */
+   
+
+   
+//    getTransactionTotal(type) {
+//     let res = 0;
+//     for(const item of this.transactions) {
+//         if(item.type === type) {
+//             res += item.amount;
+
+//         }
+//    }
+//    return res;
+//  }
+//  };
+
+
+//  account.deposit(300);
+//  account.deposit(300);
+//  account.withdraw(100);
+
+// //console.log(account.getTransactionTotal(Transaction.DEPOSIT));
+//  console.log(account.getTransactionDetails(300));
+//  //console.log(account.getBalance());
+// //console.log(account);
+/////////////////////////////////////////////////////////////////////////////////////////
+// function makePizza() {
+//     return "Your pizza is being prepared, please wait.";
+//   }
+  
+//   const result = makePizza();
+//   const pointer = makePizza;
+// console.log(pointer);
+//////////////////////////////////////////////////////////////////
+
+function deliverPizza(pizzaName) {
+    return `Delivering ${pizzaName} pizza.`;
+  }
+  
+  function makePizza(pizzaName) {
+    return `Pizza ${pizzaName} is being prepared, please wait...`;
+  }
+  
+  function makeMessage(pizzaName, callback) {
+    return callback(pizzaName);
+  }
+  makeMessage("Royal Grand", makePizza);
+  makeMessage("Ultracheese", deliverPizza);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
