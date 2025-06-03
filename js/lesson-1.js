@@ -2211,90 +2211,846 @@
 // console.log(pointer);
 //////////////////////////////////////////////////////////////////
 
-function deliverPizza(pizzaName) {
-    return `Delivering ${pizzaName} pizza.`;
-  }
+// function deliverPizza(pizzaName) {
+//     return `Delivering ${pizzaName} pizza.`;
+//   }
   
-  function makePizza(pizzaName) {
-    return `Pizza ${pizzaName} is being prepared, please wait...`;
-  }
+//   function makePizza(pizzaName) {
+//     return `Pizza ${pizzaName} is being prepared, please wait...`;
+//   }
   
-  function makeMessage(pizzaName, callback) {
-    return callback(pizzaName);
-  }
-  makeMessage("Royal Grand", makePizza);
-  makeMessage("Ultracheese", deliverPizza);
+//   function makeMessage(pizzaName, callback) {
+    
+    
+//     return callback(pizzaName);
+//   }
+
+// console.log(makeMessage("Royal Grand", makePizza));
+// console.log(makeMessage("Ultracheese", deliverPizza));
+/////////////////////////////////////////////////////////////
+// function registerGuest(name, callback) {
+//     console.log(`Registering ${name}!`);
+//     callback(name);
+//   }
+  
+//   // Передаємо інлайн-функцію greet у якості колбека
+//   registerGuest("Mango", function greet(name) {
+//     console.log(`Welcome ${name}!`);
+//   });
+  
+//   // Передаємо інлайн-функцію notify у якості колбека
+//   registerGuest("Poly", function notify(name) {
+//     console.log(`Dear ${name}, your room will be ready in 30 minutes`);
+//   });
+  ////////////////////////////////////////////////////////////////////////////////////////////////
+//   const numbers = [5, 10, 15, 20, 25];
+
+// // Класичний for
+// for (let i = 0; i < numbers.length; i += 1) {
+//   console.log(`Index ${i}, value ${numbers[i]}`);
+// }
+
+// const numbers = [5, 10, 15, 20, 25, 27];
+
+// numbers.forEach(function(element, index) {
+//     console.log(`Index- ${index}  Value- ${element}`);
+// });
+
+
+// function filterArray(numbers, value) {
+//     const array = [];
+// numbers.forEach(function(item) {
+//     if(item > value) {
+//        array.push(item); 
+//     }
+// });
+// return array;
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// filterArray([1, 2, 3, 4, 5], 4);
+// filterArray([1, 2, 3, 4, 5], 5);
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+// filterArray([12, 24, 8, 41, 76], 20);
+//////////////////////////////////////////////////////////////////////////
+// const numbers = [5, 10, 15, 20, 25];
+
+// const logMessage = (number, index) => {
+//   console.log(`Index ${index}, value ${number}`);
+// };
+// numbers.forEach(logMessage);
+///////////////////////////////////////////////////////
+// function calculateTotalPrice(orderedItems) {
+//     let totalPrice = 0;
+//   orderedItems.forEach(item => totalPrice += item);
+    
+  
+//     return totalPrice;
+//   }
+  
+//   calculateTotalPrice([12, 85, 37, 4]);
+//   calculateTotalPrice([164, 48, 291]);
+//   console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+////////////////////////////////////////////////////////////
+// function greet(name) {
+//     console.log(`Welcome ${name}!`);
+//   }
+  
+//   function notify(name) {
+//     console.log(`Dear ${name}, your room will be ready in 30 minutes`);
+//   }
+  
+//   function registerGuest(name, callback) {
+//     console.log(`Registering ${name}!`);
+//     callback(name);
+//   }
+  
+//   registerGuest("Mango", greet); // "Registering Mango!"
+//     // "Welcome Mango!"
+  
+//   registerGuest("Mango", notify); // "Registering Mango!"
+// // "Dear Mango, your room will be ready in 30 minutes"
+//  //////////////////////////////////////////////////////////////// 
+
+// function fnA(name, callback) {
+// //console.log(callback);
+// callback(name);
+// }
+// function fnB(userName) {
+//     console.log(`Hello ${userName}`);
+// }
+
+// fnA("Mariia", fnB)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// function calc(a, b, collback) {
+//     const str = "lalala";
+//     console.log(str);
+//     collback(a, b)
+//     return  collback(a, b);
+
+// }
+
+
+
+// console.log(calc(2, 5, function (x, y) {
+//     return x + y;
+// }));
+// // console.log(calc(2, 5, function (x, y) {
+// //     return x - y;
+// // }));
+
+// /////////////////////////////////////////////////////////
+// function each(array, callback) {
+//     let ar = [];
+// for(const item of array) {
+//     ar.push(callback(item))
+    
+// }
+// return ar;
+// }
+
+
+// console.log(each(
+//     [34, 24, 15, 67, 49], function(value) {
+//         return value * 2;
+//     }
+// ));
+
+
+
+// console.log(each(
+//     [34, 24, 15, 67, 49], function(value) {
+//         return value - 2;
+//     }
+// ));
+
+// const calc = (a, b, callback) => {
+//     const result = callback(a, b);
+//     return result;
+
+// }
+
+// console.log(calc(12, 10, (x, y) => x * y));
+////////////////////////////////////////////////////////////////////////////
+
+
+// const logItem = (arr) => {
+
+//   arr.forEach((item, index) => {
+//   console.log(`${index}- ${item}`);
+//   });
+// }
+// console.log(logItem(["Mango", "Poly", "Limon", "Naranja", "Sandilla"]));
+///////////////////////////////////////////////////////////////////////////////////
+
+// function printContactsInfo({names, phones}) {
+// // const arrayNames = names.split(",");
+// // const arrayPhones = phones.split(",");
+// // console.log(arrayNames);
+// // console.log(arrayPhones);
+// names.split(",").forEach(name => `${name}: ${phones}`);
+// }
+// const printContactsInfo = (obj) => {
+//     const arrayNames = obj.names.split(",");
+//     const arrayPhones = obj.phones.split(",");
+//     arrayNames.forEach((name, index) => {
+//        console.log( `${name}: ${arrayPhones[index]}`);
+//     })
+// };
+
+// printContactsInfo({
+//     names: "Galyna,Ievgenii,Ivan,Mariia",
+//     phones: "0034675653652,0034965914574,0034653145679,0034456987123",
+
+// });
+
+/////////////////////////////////////////////////////////////////////////////
+
+// const calculateAverage = (...args) => {
+//     let total = 0;
+// args.forEach((arg) => 
+//     total += arg 
+
+// );
+// return total / args.length;
+// }
+
+
+// console.log(calculateAverage(1, 2, 3, 4));
+// console.log(calculateAverage(23, 21, ));
+// console.log(calculateAverage(85, 34, 56, 21, 23, 87));
+///////////////////////////////////////////////////////////////////////////////////////
+// const cars = [
+//     {
+//       make: "Toyota",
+//       model: "Corolla",
+//       price: 20000,
+//       amount: 3
+//     },
+//     {
+//       make: "Ford",
+//       model: "Focus",
+//       price: 18500,
+//       amount: 5
+//     },
+//     {
+//       make: "Tesla",
+//       model: "Model 3",
+//       price: 35000,
+//       amount: 2
+//     },
+//     {
+//       make: "BMW",
+//       model: "X5",
+//       price: 60000,
+//       amount: 1
+//     },
+//     {
+//       make: "Volkswagen",
+//       model: "Golf",
+//       price: 22000,
+//       amount: 4
+//     }
+//   ];
+  
+// const getModels = (cars) => {
+//      const res= [];
+//      cars.forEach((element) => {
+//         res.push(element.model)
+
+//      })
+//      return res;
+// }
+// ///        ///////////   ///////////    ///////////////    /////////   /
+// const getModels = (cars) => {
+//      return cars.map((element) => `${element.model}!!!`);
+   
+// }
+// console.log(getModels(cars));
+///////////////////////////////////////////////////////////////////////////////
+// const cars = [
+//     {
+//       make: "Toyota",
+//       model: "Corolla",
+//       price: 20000,
+//       amount: 3
+//     },
+//     {
+//       make: "Ford",
+//       model: "Focus",
+//       price: 18500,
+//       amount: 5
+//     },
+//     {
+//       make: "Tesla",
+//       model: "Model 3",
+//       price: 35000,
+//       amount: 2
+//     },
+//     {
+//       make: "BMW",
+//       model: "X5",
+//       price: 60000,
+//       amount: 1
+//     },
+// //     {
+// //       make: "Volkswagen",
+// //       model: "Golf",
+// //       price: 22000,
+// //       amount: 4
+// //     }
+// //   ];
+// // const getModels = (cars, descont) => {
+// //     return cars.map((item) => ({
+// //         ...item,
+// //         price: item.price * (1 - descont),
+            
+// //     }));
+    
+    
+
+// // }
+// // console.table(getModels(cars, 0.2));
+// ///////////////////////////////////////////////////////////////////
+// // const players = [
+// //     {
+// //       id: "player-1",
+// //       name: "Galyna",
+// //       timePlayed: 120, // хвилин
+// //       points: 350,
+// //       online: true
+// //     },
+// //     {
+// //       id: "player-2",
+// //       name: "Ivan",
+// //       timePlayed: 95,
+// //       points: 280,
+// //       online: false
+// //     },
+// //     {
+// //       id: "player-3",
+// //       name: "Mariia",
+// //       timePlayed: 160,
+// //       points: 430,
+// //       online: true
+// //     },
+// //     {
+// //       id: "player-4",
+// //       name: "Petro",
+// //       timePlayed: 45,
+// //       points: 120,
+// //       online: false
+// //     },
+// //     {
+// //       id: "player-5",
+// //       name: "Oksana",
+// //       timePlayed: 210,
+// //       points: 590,
+// //       online: true
+// //     }
+// //   ];
+// //   // Збільшуємо кількість годин гравця за id
+// //   const playerIdToUpDate = "player-3";
+  
+
+// //   const nuwArray = players.map((item) => {
+// //     if(item.id === playerIdToUpDate) {
+// //         return {
+// //             ...item,
+// //             timePlayed: item.timePlayed + 100 
+// //         }
+// //     } 
+// //     return item;
+
+// //   })
+
+// // console.table(nuwArray);
+// ////////////////////////////////////////////////////////////////////////////////
+// // const tweets = [
+// //     {
+// //       id: "tweet-1",
+// //       author: "Galyna",
+// //       content: "Сьогодні чудовий день для прогулянки в парку!",
+// //       likes: 34,
+// //       retweets: 5,
+// //       isPublic: true
+// //     },
+// //     {
+// //       id: "tweet-2",
+// //       author: "Ivan",
+// //       content: "JS — найкраща мова для початку у фронтенді.",
+// //       likes: 89,
+// //       retweets: 12,
+// //       isPublic: true
+// //     },
+// //     {
+// //       id: "tweet-3",
+// //       author: "Mariia",
+// //       content: "Хтось пробував новий фреймворк Svelte?",
+// //       likes: 45,
+// //       retweets: 7,
+// //       isPublic: false
+// //     },
+// //     {
+// //       id: "tweet-4",
+// //       author: "Petro",
+// //       content: "Готуюсь до співбесіди. Поради?",
+// //       likes: 20,
+// //       retweets: 3,
+// //       isPublic: true
+// //     }
+// //   ];
+// //   const contentArray = tweets.map((item) => item.content);
+// //   console.log(contentArray);
+// ///////////////////////////////////////////////////////////////////////////
+// const allUsers = [
+//     {
+//       name: "Moore Hensley",
+//       friends: ["Sharron Pace"]
+//     },
+//     {
+//       name: "Sharlene Bush",
+//       friends: ["Briana Decker", "Sharron Pace"]
+//     },
+//     {
+//       name: "Ross Vazquez",
+//       friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"]
+//     },
+//     {
+//       name: "Elma Head",
+//       friends: ["Goldie Gentry", "Aisha Tran"]
+//     },
+//     {
+//       name: "Carey Barr",
+//       friends: ["Jordan Sampson", "Eddie Strong"]
+//     },
+//     {
+//       name: "Blackburn Dotson",
+//       friends: ["Jacklyn Lucas", "Linda Chapman"]
+//     },
+//     {
+//       name: "Sheree Anthony",
+//       friends: ["Goldie Gentry", "Briana Decker"]
+//     }
+//   ];
+//   const array = allUsers.flatMap(frends => frends.friends);
+//   console.log(array);
+// //const getUsersWithFriend = (users, friendName) => {
+// //    return users.filter(user => user.friends.includes(friendName));
+// // }
+
+  
+// //   console.log(getUsersWithFriend(allUsers, "Briana Decker")); 
+// //   // [
+// //   //   {
+// //   //     name: "Sharlene Bush",
+// //   //     friends: ["Briana Decker", "Sharron Pace"]
+// //   //   },
+// //   //   {
+// //   //     name: "Sheree Anthony",
+// //   //     friends: ["Goldie Gentry", "Briana Decker"]
+// //   //   }
+// //   // ]
+  
+// //   console.log(getUsersWithFriend(allUsers, "Goldie Gentry"));
+// //   // [
+// //   //   {
+// //   //     name: "Elma Head",
+// //   //     friends: ["Goldie Gentry", "Aisha Tran"]
+// //   //   },
+// //   //   {
+// //   //     name: "Sheree Anthony",
+// //   //     friends: ["Goldie Gentry", "Briana Decker"]
+// //   //   }
+// //   // ]
+  
+// //   console.log(getUsersWithFriend(allUsers, "Adrian Cross" )); // []
+// const books = [
+//     {
+//       title: "The Last Kingdom",
+//       author: "Bernard Cornwell",
+//       rating: 8.38,
+//     },
+//     {
+//       title: "Beside Still Waters",
+//       author: "Robert Sheckley",
+//       rating: 8.51,
+//     },
+//     {
+//       title: "The Dream of a Ridiculous Man",
+//       author: "Fyodor Dostoevsky",
+//       rating: 7.75,
+//     },
+//     { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//     { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+//   ];
+
+// const book = books.map((item) => item.title);
+// console.log(book);
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+// const evenNumbers = numbers.filter((numberEven) => numberEven % 2 === 0);
+// const oddNumbers = numbers.filter((numberOdd) => numberOdd % 2 !== 0);
+// console.log(evenNumbers);
+// console.log(oddNumbers);
+//////////////////////////////////////////////////////////////////////////////////////////
+// const LOW_SCORE = 50;
+// const HIGH_SCORE = 80;
+// const students = [
+//   { name: "Mango", score: 83 },
+//   { name: "Poly", score: 59 },
+//   { name: "Ajax", score: 37 },
+//   { name: "Kiwi", score: 94 },
+//   { name: "Houston", score: 64 },
+// ];
+//  const alto = students.filter((student) => student.score >= HIGH_SCORE);
+//  console.log(alto);
+// const medio = students.filter((student) => student.score >= LOW_SCORE && student.score < HIGH_SCORE);
+// console.log(medio);
+// const bajo = students.filter((student) => student.score < LOW_SCORE);
+// console.log(bajo);
+
+///////////////////////////////////////////////////////////////////////////////////////////
+// const books = [
+//     {
+//       title: "The Last Kingdom",
+//       author: "Bernard Cornwell",
+// //       rating: 8.38,
+// //     },
+// //     {
+// //       title: "Beside Still Waters",
+// //       author: "Robert Sheckley",
+// //       rating: 8.51,
+// //     },
+// //     {
+// //       title: "The Dream of a Ridiculous Man",
+// //       author: "Fyodor Dostoevsky",
+// //       rating: 7.75,
+// //     },
+// //     { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+// //     { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// //   ];
+  
+// //   const MIN_RATING = 8;
+// //   const AUTHOR = "Bernard Cornwell";
+// // const topRatedBooks = books.filter((ratin) => ratin.rating>= MIN_RATING);
+// // const booksByAuthor = books.filter((item) => item.author === AUTHOR);
+// // console.log(booksByAuthor);
+
+// const users = [
+    
+//         {
+//           name: "Moore Hensley",
+//           email: "moorehensley@indexia.com",
+//           eyeColor: "blue",
+//           friends: ["Sharron Pace"],
+//           isActive: false,
+//           balance: 2811,
+//           gender: "male",
+//           age: 37
+//         },
+//         {
+//           name: "Sharlene Bush",
+//           email: "sharlenebush@tubesys.com",
+//           eyeColor: "blue",
+//           friends: ["Briana Decker", "Sharron Pace"],
+//           isActive: true,
+//           balance: 3821,
+//           gender: "female",
+//           age: 34
+//         },
+//         {
+//           name: "Ross Vazquez",
+//           email: "rossvazquez@xinware.com",
+//           eyeColor: "green",
+//           friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//           isActive: false,
+//           balance: 3793,
+//           gender: "male",
+//           age: 24
+//         },
+//         {
+//           name: "Elma Head",
+//           email: "elmahead@omatom.com",
+//           eyeColor: "green",
+//           friends: ["Goldie Gentry", "Aisha Tran"],
+//           isActive: true,
+//           balance: 2278,
+//           gender: "female",
+//           age: 21
+//         },
+//         {
+//           name: "Carey Barr",
+//           email: "careybarr@nurali.com",
+//           eyeColor: "blue",
+//           friends: ["Jordan Sampson", "Eddie Strong"],
+//           isActive: true,
+//           balance: 3951,
+//           gender: "male",
+//           age: 27
+//         },
+//         {
+//           name: "Blackburn Dotson",
+//           email: "blackburndotson@furnigeer.com",
+//           eyeColor: "brown",
+//           friends: ["Jacklyn Lucas", "Linda Chapman"],
+//           isActive: false,
+//           balance: 1498,
+//           gender: "male",
+//           age: 38
+//         },
+//         {
+//           name: "Sheree Anthony",
+//           email: "shereeanthony@kog.com",
+//           eyeColor: "brown",
+//           friends: ["Goldie Gentry", "Briana Decker"],
+// //           isActive: true,
+// //           balance: 2764,
+// //           gender: "female",
+// //           age: 39
+// //         }
+// //       ]
+
+// // const getUsersWithAge = (users, minAge, maxAge) => users.filter((user) => user.age >= minAge && user.age <= maxAge);
+
+// // console.log(getUsersWithAge(users, 20, 30));
+//   /////////////////////////      //////////////////////////                /////////////////////         ////////
+// // const getUsersWithEyeColor = (users, colour) => users.filter((color) => color.eyeColor === colour);
+// // console.log(getUsersWithEyeColor(users, "brown"));
+// // console.log(getUsersWithEyeColor(users, "green"));
+// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// const books = [
+//     {
+//       title: "The Last Kingdom",
+//       author: "Bernard Cornwell",
+//       rating: 8.38,
+//     },
+//     {
+//       title: "Beside Still Waters",
+//       author: "Robert Sheckley",
+//       rating: 8.51,
+//     },
+//     {
+//       title: "The Dream of a Ridiculous Man",
+//       author: "Fyodor Dostoevsky",
+//       rating: 7.75,
+//     },
+//     { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   ];
+//   const BOOK_TITLE = "The Dream of a Ridiculous Man";
+//   const AUTHOR = "Robert Sheckley";
+  
+//   const bookWithTitle = books.find(book => book.title === BOOK_TITLE);
+//   const bookByAuthor = books.find(book => book.author === AUTHOR);
+// console.log(bookWithTitle);
+// console.log(bookByAuthor);
+///////////////////////////////////////////////////////////////////////////////////////////
+// const users = [
+//     {
+//       name: "Moore Hensley",
+//       email: "moorehensley@indexia.com",
+//       eyeColor: "blue",
+//       friends: ["Sharron Pace"],
+//       isActive: false,
+//       balance: 2811,
+//       gender: "male"
+//     },
+//     {
+//       name: "Sharlene Bush",
+//       email: "sharlenebush@tubesys.com",
+//       eyeColor: "blue",
+//       friends: ["Briana Decker", "Sharron Pace"],
+//       isActive: true,
+//       balance: 3821,
+//       gender: "female"
+//     },
+//     {
+//       name: "Ross Vazquez",
+//       email: "rossvazquez@xinware.com",
+//       eyeColor: "green",
+//       friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//       isActive: false,
+//       balance: 3793,
+//       gender: "male"
+//     },
+//     {
+//       name: "Elma Head",
+//       email: "elmahead@omatom.com",
+//       eyeColor: "green",
+//       friends: ["Goldie Gentry", "Aisha Tran"],
+//       isActive: true,
+//       balance: 2278,
+//       gender: "female"
+//     },
+//     {
+//       name: "Carey Barr",
+//       email: "careybarr@nurali.com",
+//       eyeColor: "blue",
+//       friends: ["Jordan Sampson", "Eddie Strong"],
+//       isActive: true,
+//       balance: 0,
+//       gender: "male"
+//     },
+//     {
+//       name: "Blackburn Dotson",
+//       email: "blackburndotson@furnigeer.com",
+//       eyeColor: "brown",
+//       friends: ["Jacklyn Lucas", "Linda Chapman"],
+//       isActive: false,
+//       balance: 1498,
+//       gender: "male"
+//     },
+//     {
+//       name: "Sheree Anthony",
+//       email: "shereeanthony@kog.com",
+//       eyeColor: "brown",
+//       friends: ["Goldie Gentry", "Briana Decker"],
+//       isActive: true,
+//       balance: 2764,
+//       gender: "female"
+//     }
+//   ];
+// // const getUserWithEmail = (users, email) => users.find((user) => user.email === email);
+// const isEveryUserActive = (users) => users.every((user) => user.isActive === true); 
+// console.log(getUserWithEmail(users, "shereeanthony@kog.com"));
+// const isAnyUserActive = (users) => users.some(user => user.isActive === true);
+// console.log(isEveryUserActive(users));
+// console.log(isAnyUserActive(users));
+
+// const lalallala = (users) => {
+//     const userBalance = users.reduce((acum, user) => acum +user.balance, 0);
+//     const number = userBalance / users.length;
+//     return number.toFixed(2);
+
+// }
+
+
+// console.log(lalallala(users));
+//////////////////////////////////////////////////////////////////////////////////////
+// function isBigNumber(num) {
+//     return num > 50;
+//   }
+  
+//   const processItems = (items, callback) => items.filter(callback);
+//     // Використай filter
+  
+  
+//   const numbers = [20, 60, 45, 80, 30];
+//   console.log(processItems(numbers, isBigNumber)); // [60, 80]
+//////////////////////////////////////////////////////////////////////////
+// const prices = [100, 250, 80];
+// const discont = 0.1;
+
+// const discounted = prices.map((price) => price * (1 - discont));
+// console.log(discounted); // [90, 225, 72]
+  ////////////////////////////////////////////////////////////////////////////
+//   const users = [
+//     { name: "Ivan", email: "ivan@mail.com" },
+//     { name: "Oksana", email: "oksana@mail.com" },
+//   ];
+  
+//   const emails = users.map(/* твоя функція */(user) => user.email);
+//   console.log(emails); // ["ivan@mail.com", "oksana@mail.com"]
+//   /////////////////////////////////////////////////////////////////////////////
+//   const teachers = [
+//     { name: "Anna", courses: ["JS", "HTML"] },
+//     { name: "Petro", courses: ["CSS", "React"] },
+//   ];
+  
+//   const allCourses = teachers.flatMap(/* твоя функція */(teacher) => teacher.courses);
+//   console.log(allCourses); // ["JS", "HTML", "CSS", "React"]
+// /////////////////////////////////////////////////////////////////////////////
+
+// const users = [
+//     { name: "Ivan", isActive: true },
+//     { name: "Mariia", isActive: false },
+//     { name: "Oleh", isActive: true },
+//   ];
+  
+//   const activeUsers = users.filter(/* умова */(active) => active.isActive === true);
+//   const mariia = (name) => users.find(/* умова */(mari) => mari.name === name);
+  
+//   console.log(activeUsers);
+//   console.log(mariia("Mariia"));
+//////////////////////////////////////////////////////////////////////////////////////
+
+// const products = [
+//     { name: "Laptop", inStock: true, discount: false },
+//     { name: "Phone", inStock: true, discount: true },
+//     { name: "Tablet", inStock: true, discount: false },
+//     { name: "лао", inStock: true, discount: true },
+//     { name: "дфдфдф", inStock: true, discount: true },
+//   ];
+  
+//   const allAvailable = products.every(/* умова */(product) => product.inStock);
+//   const hasDiscount = products.some(/* умова */(product) => product.discount);
+//   const discountedProducts = products.filter(product => product.discount === true);
+
+// console.log(discountedProducts);
+//   console.log(allAvailable); // true
+//   console.log(hasDiscount); // true
+/////////////////////////////////////////////////////////////////////////////////////
+// const users = [
+//     { name: "Ivan", balance: 1000 },
+//     { name: "Oksana", balance: 2500 },
+//     { name: "Petro", balance: 300 },
+//   ];
+  
+//   const total = users.reduce(/* callback, початкове значення */(acum, element) => acum + element.balance, 0);
+//   console.log(total); // 3800
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Знайди імена всіх користувачів, які мають в друзях "Briana Decker".
+
+
+// const users = [
+//   { name: "Ivan", friends: ["Oleh", "Mariia"] },
+//   { name: "Oksana", friends: ["Briana Decker", "Ivan"] },
+//   { name: "Petro", friends: ["Briana Decker"] },
+//   { name: "Galyna", friends: [] },
+// ];
+// const amigos = "Briana Decker";
+// const myFriends = users.filter((friend) => friend.friends.includes(amigos))
+//                     .map((item) => item.name);
+
+// console.log(myFriends);
+///////////////////////////////////////////////////////////////////////
+//З масиву користувачів порахуй суму балансів тільки активних користувачів.
+
+
+// const users = [
+//   { name: "Ivan", isActive: true, balance: 2000 },
+//   { name: "Mariia", isActive: false, balance: 3000 },
+//   { name: "Oleh", isActive: true, balance: 1500 },
+// ];
+// const isActiveBalance = users.filter((userIsActive) => userIsActive.isActive)
+// .reduce((acum, element) => acum + element.balance, 0);
+
+// console.log(isActiveBalance);
+////////////////////////////////////////////////////////////////////////////////////
+//У масиві викладачів перевір, чи всі курси унікальні (немає однакових).
+
+
+// const teachers = [
+//   { name: "Anna", courses: ["HTML", "CSS"] },
+//   { name: "Petro", courses: ["JS", "React"] },
+//   { name: "Ivan", courses: ["Node", "CSS"] }, // "CSS" повторюється
+// ];
+
+// // Результат: false
+
+// const lalallala = teachers.flatMap((user) => user.courses);
+// const set = [];
+// for(const cour of lalallala) {
+//     if(set.includes(cour)) {
+//         return false
+//     }
+//     return set.push(cour);
+
+// };
+
+
+// console.log(lalallala);
 
 
 
