@@ -1,18 +1,16 @@
-
 //Завдання 1:
 //Запропонуйте користувачу ввести число за допомогою prompt().
 // Збережіть введене значення у змінну number.
 // Перевірте, чи дорівнює змінна number числу 10:
 //    Якщо так – виведіть повідомлення 'Вірно' у alert().
-//    Якщо ні – виведіть 'Невірно'. 
+//    Якщо ні – виведіть 'Невірно'.
 
-// Підказка: prompt завжди повертає рядок (String), тому перед перевіркою  
+// Підказка: prompt завжди повертає рядок (String), тому перед перевіркою
 // перетворіть значення на число за допомогою Number().
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 // //let username = "Mango";
 // username = "Poly";
 // console.log(typeof username);
-
 
 // let userName;
 // userName = "Petia";
@@ -23,7 +21,6 @@
 // // Change code below this line
 // const totalPrice = pricePerItem * orderedQuantity;
 // console.log(totalPrice);
-
 
 // let a = 5;
 // let b = 10;
@@ -40,14 +37,11 @@
 // //const message = name + "25" + " heppy" + "!";
 // console.log(message);
 
-
 // const username = "Poly";
 // const message = "Welcome, " + username + "!";
 // console.log(typeof message);
 // console.log("5" + 2);
 // console.log(typeof  "10" + false);
-
-
 
 // function getGreetingMessage(firstName, lastName) {
 //     return `Привіт, ${firstName} ${lastName}! Ласкаво просимо на сайт.`;
@@ -59,17 +53,14 @@
 // const product = "Дрон";
 // const price = 350;
 // const quentity = 3;
- 
+
 //  function getOrderSummary(product, price, quentity) {
 //     const total = price * quentity;
 //     return `Товар: ${product}. Ціна за одиницю: ${price} грн. Кількість: ${quentity}. Загальна сума: ${total} грн.`;
 
-
 //  }
-     
 
 //  console.log(getOrderSummary("Дрон", 400, 3));
-
 
 //  function greetUser(name) {
 //     return `Вітаємо, ${name}! Гарного вам дня!`;
@@ -92,12 +83,9 @@
 // }
 // console.log(orderInfo("Планшет", 2, 4500));
 
-
-
 // const username = "Poly";
 // const message = `Username ${username} is ${username.length} characters long`;
 // console.log(message);
-
 
 // const courseTopic = "JavaScript essentials";
 
@@ -142,7 +130,6 @@
 // // console.log(makeTransaction(10, 500)); // "You ordered 10 droids worth 5000 credits!"
 // ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
 // function getShippingMessage(country, price, deliveryFee) {
 //     const totalPrice = price + deliveryFee
 
@@ -158,8 +145,8 @@
 //     const contentNambr = parseInt(content);
 //     const paddingNamber = parseInt(padding);
 //     const borderNamber = parseFloat(border);
-    
-//     return contentNambr + (paddingNamber * 2) + (borderNamber * 2); 
+
+//     return contentNambr + (paddingNamber * 2) + (borderNamber * 2);
 
 // };
 
@@ -168,12 +155,10 @@
 // console.log(getElementWidth("200px", "0px", "0px")); // 200
 // ///////////////////////////////////////////////////////////////////
 
-
 // function getPrice(subscription) {
 //     let prais = 0;
 //     if (subscription === "pro") {
 //         prais = 100;
-       
 
 //     }
 //     return prais;
@@ -184,7 +169,7 @@
 // // function checkAge(age) {
 // //     if (age >= 18) {
 // //       console.log("You are an adult");;
-    
+
 // //     }  else {
 // //         console.log("No adult");
 // //     }
@@ -227,7 +212,7 @@
 //         console.log(50);
 //         break;
 //        default:
-//       console.log("Invalid subscription type!"); 
+//       console.log("Invalid subscription type!");
 //     }
 //   }
 //   console.log(getSubscriptionPrice("professional"));
@@ -238,7 +223,7 @@
 //       const priceOrder = quantity * pricePerDroid;
 //       if (customerCredits >= priceOrder ) {
 //         return `You ordered ${quantity} droids worth ${priceOrder} credits!`;
-        
+
 //       } else {
 //         return "Insufficient funds!";
 //       }
@@ -252,8 +237,7 @@
 // /////////////////////////////////////////////////////////////////////////////////////////////////////
 // function isNumberInRange(start, end, number) {
 //     return start <= number && end >= number;
-      
-    
+
 //   }
 //   console.log(isNumberInRange(10, 30, 17));
 //   console.log(isNumberInRange(10, 30, 5));
@@ -272,7 +256,7 @@
 //  const message = "Привіт як справи!";
 //  console.log(message.toUpperCase());
 //  ////////////////////////////////////////////////////////////////////
-   
+
 //  function getSubstring(string, length) {
 //     return string.slice(0, length);
 //   }
@@ -280,8 +264,7 @@
 //   console.log(getSubstring("Hello world", 5));
 //   console.log(getSubstring("Hello world", 8));
 //   console.log(getSubstring("Hello world", 11));
-  //////////////////////////////////////////////////////////////////////
-
+//////////////////////////////////////////////////////////////////////
 
 //   function checkFileExtension(fileName, ext) {
 //     if (fileName.endsWith(ext)) {
@@ -289,9 +272,9 @@
 //     } else {
 //       return "File extension does not match";
 //     }
-  
+
 //   }
-  
+
 //  console.log(checkFileExtension("styles.css", ".css"));
 //   console.log(checkFileExtension("styles.css", ".js"));
 //   console.log(checkFileExtension("app.js", ".js"));
@@ -339,9 +322,9 @@
 //     while (client < maxClients) {
 //         console.log(client);
 //         client += 1;
-        
+
 //   }
-  
+
 // }
 //   countClients(18, 25)
 //   ////////////////////////////////////////////////////////////////
@@ -360,10 +343,9 @@
 //   console.log(calculateTotal(18));
 //   console.log(calculateTotal(24));
 //  ///////////////////////////////////////////////////////////////////////////////
- 
+
 // //  function calculateTotal(number) {
 // //     let sum  0;
-
 
 // //  }
 
@@ -398,7 +380,7 @@
 
 // function checkForSpam(message) {
 //     const messageToUpper = message.toUpperCase();
-      
+
 //       if (messageToUpper.includes("spam") || messageToUpper.includes("sale")) {
 //         return true;
 
@@ -438,22 +420,20 @@
 // Збережіть введене значення у змінну number.
 // Перевірте, чи дорівнює змінна number числу 10:
 //    Якщо так – виведіть повідомлення 'Вірно' у alert().
-//    Якщо ні – виведіть 'Невірно'. 
+//    Якщо ні – виведіть 'Невірно'.
 
-// Підказка: prompt завжди повертає рядок (String), тому перед перевіркою  
+// Підказка: prompt завжди повертає рядок (String), тому перед перевіркою
 // перетворіть значення на число за допомогою Number().
 //  const user = prompt("ВЕДІТЬ ЧИСЛО!");
 //  const number = Number(user);
 // //  if (number === 10) {
 // //     alert('Вірно');
-    
-    
+
 // //  } else {
 // //     alert('Невірно');
 // //  }
 // number === 10 ? alert('Вірно') : alert('Невірно');
 /////////////////////////////////////////////////////////////////////////////////
-
 
 // У змінній min лежить випадкове число від 0 до 59.
 // Визначте, в яку чверть години потрапляє
@@ -471,7 +451,7 @@
 
 // }  else if(min <= 30 && min <= 44) {
 //     message = `${min} входить в третю чверть години`;
-    
+
 // } else if(min <= 45 && min <= 49){
 //     message = `${min} входить в четверту чверть години`;
 
@@ -480,12 +460,12 @@
 // }
 // alert(message);
 //////////////////////////////////////////////////////////////////
-// Змінна num може набувати 4 значення: '1', '2', '3' або '4' 
-// (запитуй це значення у користувача через prompt). 
+// Змінна num може набувати 4 значення: '1', '2', '3' або '4'
+// (запитуй це значення у користувача через prompt).
 // Якщо вона має значення '1', то у змінну result запишіть 'зима',
 // якщо має значення '2' - 'весна' і так далі.
 // Розв'яжіть завдання через switch-case.
-// Не забудьте про дефолтне значення, на випадок, якщо користувач 
+// Не забудьте про дефолтне значення, на випадок, якщо користувач
 // введе в prompt щось інше. В такому випадку result має набувати значення:
 // "Вибачте, але ви маєте ввести значення від 1 до 4 включно".
 // Значення змінної result виведіть в консоль.
@@ -508,8 +488,6 @@
 //          default:
 //              result = "Вибачте, але ви маєте ввести значення від 1 до 4 включно";
 
-
-
 //  }
 //  alert(result);
 //  console.log(result);
@@ -518,12 +496,10 @@
 // Отримуйте від користувача число (кількість хвилин) через prompt
 // і виводьте у консоль рядок у форматі годин та хвилин.
 // Приклад: користувач вводить в prompt '70' -> в консолі відобразиться '01:10'.
-// Корисне посилання для відображення годин та хвилин у потрібному форматі ('01' замість '1'): 
+// Корисне посилання для відображення годин та хвилин у потрібному форматі ('01' замість '1'):
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart#examples
 // const user = prompt("Введіть кількість хвилин");
 // console.log(formatTaim(user));
-
-
 
 // function formatTaim(totalMinuts) {
 //     const hora = Math.floor(totalMinuts / 60);
@@ -535,18 +511,17 @@
 //     return `${modificHora}:${modificMinuts}`;
 
 // }
- 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Напишіть функцію getNumbers(min, max), що приймає 2 параметри - 
+// Напишіть функцію getNumbers(min, max), що приймає 2 параметри -
 // мінімальне і максимальне число відповідно.
 // Напишіть цикл всередині функції, який виводить у консоль
 // всі числа від max до min за спаданням.
 // Окрім цього, підрахуйте суму всіх парних чисел в цьому циклі
 // і поверніть її з функції.
-// 
+//
 // function getNumbers(min, max) {
-    
+
 //     let sum = 0;
 //     for(let i = max; i >= min; i -= 1) {
 //         console.log(i);
@@ -582,10 +557,9 @@
 //     const password = prompt("Введіть пароль");
 //     if(password === "пароль") {
 //         alert("Добрий день!");
-    
+
 //     } else if(password === "" || password === null) {
 //         alert("Скасовано");
-
 
 //     } else {
 //         alert("Невірний пароль");
@@ -599,13 +573,12 @@
 /////////////////////////////////////////////////////////////////////////////////////
 // Використайте цикл while, щоб вивести в console всі числа від 0 до 20 включно.
 
-
 // function numeros(dosdecimas) {
 //     let count = 0;
-//     while (count <= dosdecimas) {   
+//     while (count <= dosdecimas) {
 //         console.log(`Count: ${count}`);
 //         count++;
-    
+
 //     }
 //     return count;
 // }
@@ -624,17 +597,16 @@
 //     }
 //     return a < b ? a : b;
 //  }
-//  console.log(min(5, 10));      
-// console.log(min(15, 3));      
-// console.log(min("5", 10));    
-// console.log(min(5, "hello")); 
+//  console.log(min(5, 10));
+// console.log(min(15, 3));
+// console.log(min("5", 10));
+// console.log(min(5, "hello"));
 ///////////////////////////////////////////////////////////////////////////////////////
 
-// Напишіть функцію isAdult(age), яка  приймає число - вік користувача і повертає true, 
+// Напишіть функцію isAdult(age), яка  приймає число - вік користувача і повертає true,
 // якщо параметр age більше чи дорівнює 18.
-// В іншому випадку вона запитує підтвердження через confirm 
+// В іншому випадку вона запитує підтвердження через confirm
 // і повертає його результат (true/false).
-
 
 // function isAdult(age) {
 //   if (age >= 18 ) {
@@ -645,7 +617,6 @@
 //   }
 // }
 
-
 // console.log(isAdult(20));
 // console.log(isAdult(17));
 ///////////////////////////////////////////////////////////////////////////////////
@@ -654,12 +625,11 @@
 // якщо ділиться  без остачі на 5 - виводить в консоль 'buzz',
 // якщо ділиться  без остачі і на 3, і на 5 - виводить в консоль 'fizzbuzz'.
 // function fizzBuzz(num) {
-     
 
 //     for(let i = 1; i <= num; i += 1) {
 //         if(i % 3 === 0 && i % 5 === 0) {
 //             console.log('fizzbuzz');
- 
+
 //         } else if(i % 3 === 0) {
 //             console.log('fizz');
 //         } else if(i % 5 === 0) {
@@ -670,7 +640,6 @@
 //         }
 //     }
 
-    
 // }
 // fizzBuzz(15);
 //////////////////////////////////////////////////////////////////////////////////
@@ -679,18 +648,18 @@
 //     switch(country) {
 //         case "China":
 //             price = 100;
-//             break;  
+//             break;
 //         case "Chile":
 //             price = 250;
-//             break;   
+//             break;
 //         case "Australia":
 //             prais = 170;
 //             break;
 //         case "Jamaica":
 //             prais = 120;
 //             break;
-             
-//          default: 
+
+//          default:
 //             return `Sorry, there is no delivery to your country`;
 //         }
 //         return `Shipping to ${country} will cost ${price} credits`;
@@ -722,7 +691,7 @@
 //    getLastElementMeta(["apple", "peach"]);
 //    getLastElementMeta(["apple"]);
 ///////////////////////////////////////////////////////////////////////////////////////////
-  
+
 // function getExtremeElements(array) {
 //     const elementArray = array[array.length -1]
 //     return [array[0], elementArray];
@@ -732,13 +701,12 @@
 //      getExtremeElements(["apple", "peach", "pear", "banana"]);
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-    // const getExtremeElements = ["apple", "peach", "pear", "banana"];
-    // console.log(getExtremeElements.join());
+// const getExtremeElements = ["apple", "peach", "pear", "banana"];
+// console.log(getExtremeElements.join());
 ///////////////////////////////////////////////////////////////////////////
 // function getLength(array) {
 //     const arrayString = array.join("");
-    
+
 //     return arrayString.length;
 // }
 // console.log(getLength(["Mango", "hurries", "to", "the", "train"]));
@@ -776,16 +744,15 @@
 // console.log( calculateEngravingPrice("Web-development is creative work", 40));
 //  calculateEngravingPrice("Web-development is creative work", 20);
 // ///////////////////////////////////////////////////////////////////////////////////////////
-// 
+//
 // function getSlice(array, value) {
 //     const elementArray = array.indexOf(value);
-    
+
 //     if(elementArray === -1) {
 //         return "Елемент не знайшли!!!";
 //     }
 //     return array.slice(0, elementArray + 1);
 //   }
-
 
 // console.log(getSlice(["Mango", "Poly", "Ajax"], "Poly"));
 // console.log(getSlice(["Mango", "Poly", "Ajax"], "Ajax"));
@@ -812,7 +779,6 @@
 // return arrayTitle.join("-");
 // }
 
-
 // console.log(slugify("Arrays for beginners")); // "arrays-for-beginners"
 // console.log(slugify("English for developer")); // "english-for-developer"
 // console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"
@@ -834,7 +800,7 @@
 // function filterArray(numbers, value) {
 //    const array = [];
 //    for (let i = 0; i < numbers.length; i++) {
-    
+
 //     if (numbers[i] > value) {
 //         array.push(numbers[i])
 //     }
@@ -862,7 +828,6 @@
 // function getEvenNumbers(start, end) {
 //     const evenNumbers = [];
 
-
 // //      if (typeof start !== "number" || typeof end !== "number") {
 // //        console.log("Введіть два числа");
 // //          return [];
@@ -886,12 +851,12 @@
 //     const itemToLowerCase = item.toLowerCase();
 //     if (storage.includes(itemToLowerCase)) {
 //         return `${itemToLowerCase} is available to order!`;
-  
+
 //   } else {
 //     return "Sorry! We are out of stock!";
 //   }
-  
-// }  
+
+// }
 //   console.log( checkStorage(["apple", "plum", "pear"], "pLuM"));
 //     console.log(checkStorage(["apple", "plum", "pear"], "pear"));
 //    console.log( checkStorage(["apple", "plum", "pear"], "pEAr"));
@@ -918,7 +883,7 @@
 //     let suma = 0;
 //     for (const item of order) {
 //       suma += item;
-      //     }
+//     }
 //     return suma;
 //   }
 //   console.log(calculateTotalPrice([12, 85, 37, 4]));
@@ -933,10 +898,8 @@
 //       return args.join(" , ");
 //       return args;
 //   }
-  
+
 //   console.log(foo(1, 2, 3)); // Поверне "1-2-3"
-  
-  
 
 // const a = [1, 2, 3,];
 // const b = a
@@ -971,13 +934,12 @@
 // "<номер елемента> - <значення елемента>".
 // Використайте цикл for для перебору елементів масиву.
 // Нумерація елементів повинна починатися з 1 (а не з 0).
- 
+
 // const styles = ['jazz', 'blues'];
 // styles.push('rock-n-roll');
 // const nuwStyle = ["classic"];
 // //styles[1] = "classic";
 // const nuwStyles = nuwStyle.concat(styles);
-
 
 // const str = nuwStyles.indexOf("blues");
 // if (str !== -1) {
@@ -1039,7 +1001,7 @@
 // console.log(calculateAverage(5, "text", 15));    // 10
 // console.log(calculateAverage("a", "b"));         // "Жодного числа не передано."
 ///////////////////////////////////////////////////////////////////////////////////////////////
-// const values = [2, 34, 56, 3, 5, 24, 1]; 
+// const values = [2, 34, 56, 3, 5, 24, 1];
 // let min;
 // for (let i = 0; i < values.length; i++) {
 //     if (i === 0) {
@@ -1050,7 +1012,7 @@
 // }
 // }
 // console.log(min);
-  ////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
 
 //   function createReversedArray() {
 //     const arrayRevers = Array.from(arguments).toReversed();
@@ -1060,8 +1022,6 @@
 //     console.log(createReversedArray(164, 48, 291));
 //     console.log(createReversedArray(412, 371, 94, 63, 176));
 /////////////////////////////////////////////////////////////////////////////////////
-
-
 
 // const book = {
 //     title: "The Last Kingdom",
@@ -1098,7 +1058,7 @@
 //    const keys = Object.keys(object);
 //    return keys.length;
 //   }
-  
+
 //   console.log(countProps({ name: "Mango", age: 2 }));
 //   console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
 ///////////////////////////////////////////////////////////////////////////////////////////
@@ -1109,10 +1069,10 @@
 //   };
 //   const keys = Object.keys(book);
 //   console.log(keys); // ["title", "author", "rating"]
-  
+
 //   const values = Object.values(book);
 //   console.log(values); // ["The Last Kingdom", "Bernard Cornwell", 8.38]
-  ////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
 //   function countTotalSalary(salaries) {
 //     let totalSalary = 0;
 //     const array = Object.values(salaries);
@@ -1145,9 +1105,9 @@
 //     { title: "Beside Still Waters", author: "Robert Sheckley" },
 //     { title: "The Dream of a Ridiculous Man", author: "Fyodor Dostoevsky" }
 //   ];
-  
+
 //   const authorToSearchFor = "Robert Sheckley";
-  
+
 //   for (const book of books) {
 //       if(book.author === authorToSearchFor) {
 //           console.log(book);
@@ -1166,7 +1126,7 @@
 //     for (const product of products) {
 //       if (product.name === productName) {
 //         return product.price;
-//     } 
+//     }
 //     }
 //   return null;
 // }
@@ -1239,7 +1199,7 @@
 //   getAllPropValues("quantity");
 //   getAllPropValues("price");
 ///////////////////////////////////////////////////////////////////////////
-// Напиши функцію getPricesAboveThreshold(products, threshold), 
+// Напиши функцію getPricesAboveThreshold(products, threshold),
 // яка повертає масив цін, більших за вказане значення.
 
 // const products = [
@@ -1258,9 +1218,9 @@
 
 //     }
 //     return array;
-  
+
 //     }
-//    console.log(getPricesAboveThreshold(products, 700)); // [1500, 800]  
+//    console.log(getPricesAboveThreshold(products, 700)); // [1500, 800]
 ///////////////////////////////////////////////////////////////////////////////////
 // Напиши універсальну функцію getAllPropertyValues(array, prop),
 //  яка повертає всі значення заданої властивості з масиву об’єктів.
@@ -1299,9 +1259,9 @@
 //     return array;
 //   }
 //   console.log(findProductNamesByQuantity(inventory, 5)); // ["Pen", "Pencil"]
- ///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
 //  Напиши функцію getAllAuthors(), яка повертає масив авторів з масиву книг.
- 
+
 //  const books = [
 //     { title: "Book A", author: "Author A", pages: 100 },
 //     { title: "Book B", author: "Author B", pages: 200 },
@@ -1313,15 +1273,15 @@
 //         booksAutor.push(item.author);
 //     }
 //     return booksAutor;
-//         } 
-//   console.log(getAllAuthors(books)); // )["Author A", "Author B", "Author C"] 
+//         }
+//   console.log(getAllAuthors(books)); // )["Author A", "Author B", "Author C"]
 // const book = {
 //     title: "The Last Kingdom",
 //     author: "Bernard Cornwell",
 //     genres: ["historical prose", "adventure"],
 //     rating: 8.38,
 //     user : { name: "Notebook",
-//          quantity: 3 
+//          quantity: 3
 //         },
 //   };
 // book.rating = 9;
@@ -1334,7 +1294,7 @@
 //     { name: "Olga", order: { product: "Keyboard", quantity: 1 } },
 //     { name: "Stepan", order: { product: "Monitor", quantity: 3 } },
 //   ];
-  
+
 //   function getAllProductNames(customers) {
 //     // Поверни масив назв продуктів
 //     const array = [];
@@ -1350,7 +1310,7 @@
 //     { name: "Dima" },
 //     { name: "Nina", order: { product: "Phone", quantity: 2 } },
 //   ];
-  
+
 //   function getClientsWithOrders(clients, nombre) {
 //     // Поверни масив імен клієнтів, які мають замовлення
 //     const array = [];
@@ -1360,8 +1320,7 @@
 //          }
 //         return array;
 //        }
-  
-  
+
 //   console.log(getClientsWithOrders(clients, "Lena")); // ["Lena", "Nina"]
 // const users = [
 //     { name: "Alice", age: 25 },
@@ -1370,9 +1329,8 @@
 //   ];
 //   function getAllNames(users) {
 //     const arrayNames = [];
-//     for (const user of users) { 
+//     for (const user of users) {
 //         arrayNames.push(user.name);
-
 
 //     }
 //     return arrayNames;
@@ -1387,11 +1345,11 @@
 // console.log(foo("name", "Alice")); // {name: 'Alice'}
 ///////////////////////////////////////////////////////////////////////
 
-// const users = { 
-//     name: "Alice", 
+// const users = {
+//     name: "Alice",
 //     age: 25,
 //     hobby: "JS",
-//     premium: true 
+//     premium: true
 // }
 // users.mood = "happy";
 
@@ -1406,22 +1364,20 @@
 // }
 /////////////////////////////////////////////////////////////////////////////////
 
-
-
 // const colors = [
 //     { hex: "#f44336", rgb: "244,67,54" },
 //     { hex: "#2196f3", rgb: "33,150,243" },
 //     { hex: "#4caf50", rgb: "76,175,80" },
 //     { hex: "#ffeb3b", rgb: "255,235,59" },
 //   ];
-  
+
 //   const hexColors = [];
 //   const rgbColors = [];
 //   for (const color of colors) {
 //     hexColors.push(color.hex);
 //     rgbColors.push(color.rgb);
 //   }
-  
+
 // console.log(hexColors);
 // console.log(rgbColors);
 /////////////////////////////////////////////////////////////////////////////////////
@@ -1438,7 +1394,7 @@
 //       if(product[propName] !== undefined) {
 //         arrayValues.push(product[propName]);
 //       }
-    
+
 //     }
 //     return arrayValues;
 //   }
@@ -1447,7 +1403,7 @@
 //   getAllPropValues("price");
 //   console.log(getAllPropValues("category"));
 //////////////////////////////////////////////////////////////////function calculateTotalPrice(productName) {
-  
+
 // function calculateTotalPrice(productName) {
 // const products = [
 //     { name: "Radar", price: 1300, quantity: 4 },
@@ -1456,14 +1412,14 @@
 //     { name: "Grip", price: 1200, quantity: 9 },
 //   ];
 //    for (const product of products) {
-    
+
 //     if (product.name === productName) {
 //         return product.price * product.quantity;
 //     }
 //    }
 //    return "popoo";
 // }
-  
+
 //   console.log(calculateTotalPrice("Blaster"));
 // console.log(calculateTotalPrice("Radar"));
 // calculateTotalPrice("Droid");
@@ -1483,7 +1439,7 @@
 //           return `Adding book ${bookName}`;
 //     },
 //   };
-  
+
 //   // Виклики методів
 //   bookShelf.getBooks(); // поверне "Returning all books"
 //   console.log(bookShelf.addBook("New book 1")); // поверне "Adding book New book 1"
@@ -1508,9 +1464,9 @@
 //       console.log(this);
 //     },
 //   };
-  
+
 //   bookShelf.getBooks(); // {books: ["The Last Kingdom", "The Mist"], getBooks: f}
-  //////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
 //   const atTheOldToad = {
 //      potions: [],
 //      getPotions() {
@@ -1535,13 +1491,12 @@
 //     books: ["The Last Kingdom"],
 //     getShelf() {
 //         return this.books;
-    
+
 //     },
 //     addShelf(nameShelf) {
 //         this.books.push(nameShelf);
 //     },
 // };
-
 
 // bookShelf.addShelf("Harry Potter");
 // bookShelf.addShelf("1984");
@@ -1562,7 +1517,6 @@
 // console.log(atTheOldToad.getPotions());
 ///////////////////////////////////////////////////////////////////
 
-
 // const atTheOldToad = {
 //     potions: [
 //       { name: "Speed potion", price: 460 },
@@ -1578,10 +1532,10 @@
 //       let total = 0;
 //       for (const potion of this.potions) {
 //         total += potion.price;
-        
+
 //       }
 //       return total;
-      
+
 //     },
 //   };
 //   console.log(atTheOldToad.getPotions());
@@ -1626,7 +1580,6 @@
 
 //         }
 
-
 //     }
 // }
 // atTheOldToad.updatePotionName("Stone skin", "Invisibility");
@@ -1639,7 +1592,7 @@
 //     // for (const ar of args) {
 //     //     //console.log(ar);
 //     //   sum += ar;
-      
+
 //     // }
 //     // return sum;
 //   }
@@ -1650,9 +1603,9 @@
 // function multiply(first, second, ...args) {
 //     console.log(first, second, args);
 //   }
-  
+
 //   multiply(1, 2); // 1 2
-//   multiply(1, 2, 3); // 1 2 [3] 
+//   multiply(1, 2, 3); // 1 2 [3]
 //   multiply(1, 2, 3, 4); // 1 2 [3, 4]
 ///////////////////////////////////////////////////////
 // function addOverNum(value, ...args) {
@@ -1661,7 +1614,7 @@
 //       if (ar > value) {
 //         sum += ar;
 //       }
-      
+
 //     }
 //     return sum;
 //   }
@@ -1692,10 +1645,10 @@
 //     withPassword: true,
 //     timePerQuestion: 30,
 //   };
-  
+
 //   const finalSettings = {...defaultSettings, ...overrideSettings};
 //   console.log(finalSettings);
- /////////////////////////////////////////////////////////////////////////////////////////////// 
+///////////////////////////////////////////////////////////////////////////////////////////////
 // function isEnoughCapacity(products, containerSize) {
 //       let totalProducts = 0;
 // //       const values = Object.values(products);
@@ -1703,9 +1656,7 @@
 
 // //     for (const value of values) {
 // //             totalProducts += value;
-            
 
-               
 // //     }
 // //     return totalProducts <= containerSize;
 // // }
@@ -1760,7 +1711,7 @@
 // const profile = {
 //     username: "Jacob",
 //   playTime: 300,
-  
+
 //   getInfo() {
 //     return `${this.username} has ${this.playTime} active hours!`;
 //   },
@@ -1773,7 +1724,6 @@
 //   }
 
 // };
-
 
 // console.log(profile.getInfo()); // "Jacob has 300 active hours!"
 
@@ -1788,7 +1738,7 @@
 // Функція рахує і повертає загальну вартість фрукта
 // з таким ім'ям, ціною та кількістю з об'єкта.
 
-// Зверніть увагу, що в масиві може бути кілька обʼєктів з однаковою 
+// Зверніть увагу, що в масиві може бути кілька обʼєктів з однаковою
 // назвою фрукта, це також треба урахувати.
 // const fruits = [
 //     { name: "Яблуко", price: 45, quantity: 7 },
@@ -1800,16 +1750,15 @@
 //   ];
 
 //  function calcTotalPrice(fruits, fruitName) {
-//    let total = 0; 
+//    let total = 0;
 //     for (const fruit of fruits) {
 //         if (fruit.name === fruitName) {
 //             total +=  fruit.price * fruit.quantity;
 
-//         } 
+//         }
 //     }
 //     return total;
 //  }
-
 
 // console.log(calcTotalPrice(fruits, "Яблуко"));
 // console.log(calcTotalPrice(fruits, "Апельсин"));
@@ -1829,22 +1778,22 @@
 //     for (const arg of args) {
 //         if (typeof arg !== "number") {
 //             continue;
-//         } 
+//         }
 //            sum += arg;
 //            caunt += 1;
 
 //         }
 //         return sum / caunt;
-        
+
 // }
 // console.log(caclculateAverage( "fjnsj", 1, 2, 3, 4) );
 ///////////////////////////////////////////////////////////////////////////////
-// Напишіть функцію, яка сумуватиме сусідні числа 
+// Напишіть функцію, яка сумуватиме сусідні числа
 // і пушитиме їх в новий масив.
 
 // const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
 
-// уточнення: складати необхідно перше число з другим, потім друге - з третім, 
+// уточнення: складати необхідно перше число з другим, потім друге - з третім,
 // третє - з четвертим і так до кінця.
 // В результаті функція має повертати масив [33, 45, 39, 17, 25, 27, 29].
 // const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
@@ -1866,16 +1815,15 @@
 //        array.push(args[i] + args[i + 1]);
 
 //     }
-//        return array; 
+//        return array;
 
 //     }
-
 
 // console.log(addAdjacentNumbers(someArr));
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Напишіть функцію findSmallestNumber(numbers),
 // яка шукає найменше число в масиві.
-// Додайте перевірку, що функція отримує саме масив, і 
+// Додайте перевірку, що функція отримує саме масив, і
 // якщо функція отримує масив - поверніть з функції найменше число,
 // в іншому випадку - поверніть 'Sory, it is not an array!'.
 
@@ -1892,14 +1840,13 @@
 //                 numberMin = numbers[i];
 //             }
 
-
 //         }
 //         return numberMin;
-//     } 
+//     }
 // console.log(findSmallestNumber(numbers));
 ////////////////////////////////////////////////////////////////////
 
-// Напишіть функцію findLongestWord(string), яка 
+// Напишіть функцію findLongestWord(string), яка
 // приймає довільний рядок, що складається лише зі слів, розділених
 // пробілами (параметр string), і повертатиме найдовше слово у реченні.
 
@@ -1946,8 +1893,6 @@
 // //     { name: "Макс", age: 22, hobby: "ігри" },
 // //     { name: "Анна", age: 30, hobby: "малювання" }
 // //   ];
-  
-
 
 // //   function showFriendInfo(amigos, nameFrend) {
 // // const array = [];
@@ -1959,9 +1904,8 @@
 // //     }
 // //     return array;
 // //   }
-    
-// //   console.log(showFriendInfo(friends, 25));
 
+// //   console.log(showFriendInfo(friends, 25));
 
 // // const counter = {
 // //     value: 45,
@@ -1974,21 +1918,20 @@
 // //      getValue() {
 // //        return this.value
 // //      }
-     
+
 // //    }
-   
-   
+
 // //    counter.increment();
 // //    counter.increment();
 // //    counter.decrement();
-// //    console.log(counter.getValue()); // 
+// //    console.log(counter.getValue()); //
 // ////////////////////////////////////////////////////////////////////
 // // const user = {
-// //     name: "Галина", 
+// //     name: "Галина",
 // //     messages: ["Привіт!", "Як справи?"],
 // //     addMessage(message) {
 // //       this.messages.push(message);
-      
+
 // //     },
 // //     getLastMessage() {
 // //       return this.messages[this.messages.length - 1];
@@ -2005,8 +1948,6 @@
 //     isEnrolled: true,
 //     nuwName(cambioName) {
 //         this.name = cambioName;
-        
-
 
 //     }
 //   };
@@ -2016,11 +1957,11 @@
 //     age: 27,
 //     isEnrolled: false
 //   };
-//   const friends = { 
-//     name: "Іван", 
-//     age: 25, 
+//   const friends = {
+//     name: "Іван",
+//     age: 25,
 //     hobby: "футбол" };
- 
+
 // book.bookCambioPleilist = student.nuwName;
 // friends.friendsCambio = student.nuwName;
 // student.nuwName("lalala");
@@ -2037,7 +1978,7 @@
 // // 🔧 Твоє завдання:
 // // Створи масив allItems за допомогою spread-оператора
 // const allItems = [...shopA, ...shopB];
-// console.log(allItems); 
+// console.log(allItems);
 // // ["хліб", "молоко", "яйця", "сир", "масло", "овочі"]
 /////////////////////////////////////////////////////////////
 // Створи новий об’єкт user, який об’єднує властивості з personalInfo та contactInfo за допомогою spread-оператора.
@@ -2046,23 +1987,21 @@
 
 // Додай нову властивість isOnline: true прямо в user.
 
-
 // cot personalInfo = {
 //     name: "Олег",
 //     age: 28
 //   };
-  
+
 //   const contactInfo = {
 //     email: "oleg@gmail.com",
 //     phone: "0987654321"
 //   };
-  
+
 // const user = {
 //     ...personalInfo,
 //     ...contactInfo
 
 // }
-
 
 // user.isOnline = true;
 // console.log(user);ns
@@ -2075,10 +2014,6 @@
 // console.log(a === b);
 ////////////////////////////////////////////////////////////////////////////
 
-
-
-
-
 // * Типів транзакцій всього два.
 // * Можна покласти чи зняти гроші з рахунку.
 // // */
@@ -2086,18 +2021,18 @@
 //  DEPOSIT: "deposit",
 //  WITHDRAW: "withdraw",
 // };
- 
+
 //  /*
 //   * Кожна транзакція це об'єкт із властивостями: id, type та amount
 //   */
- 
+
 //  const account = {
 //    // Поточний баланс рахунку
 //    balance: 0,
- 
+
 //    // Історія транзакцій
 //    transactions: [],
- 
+
 //    /*
 //     * Метод створює та повертає об'єкт транзакції.
 //     * Приймає суму та тип транзакції.
@@ -2105,12 +2040,9 @@
 //    createTransaction(amount, type) {
 //     const obj = {id: amount, amount, type};
 //     return obj;
-    
-    
+
 //    },
 
-
- 
 //    /*
 //     * Метод, що відповідає за додавання суми до балансу.
 //     * Приймає суму транзакції.
@@ -2121,10 +2053,9 @@
 //     this .balance += amount;
 //     const transaction = this.createTransaction(amount, Transaction.DEPOSIT);
 //      this.transactions.push(transaction);
-    
-    
+
 //    },
- 
+
 //    /*
 //     * Метод, що відповідає за зняття суми з балансу.
 //     * Приймає суму транзакції.
@@ -2143,19 +2074,17 @@
 //     this.balance -= amount;
 //     const transaction = this.createTransaction(amount, Transaction.WITHDRAW);
 //     this.transactions.push(transaction);
-    
-//    },
- 
 
+//    },
 
 //    /*
 //     * Метод повертає поточний баланс
 //     */
 //    getBalance() {
 //      return this.balance;
-    
+
 //    },
- 
+
 //    /*
 //     * Метод шукає та повертає об'єкт транзакції по id
 //     */
@@ -2166,20 +2095,15 @@
 
 //         }
 
-
 //     }
 //     return "Not found";
 //    },
-  
-    
- 
+
 //    /*
 //     * Метод повертає кількість коштів
 //     * певного типу транзакції з усієї історії транзакцій
 //     */
-   
 
-   
 //    getTransactionTotal(type) {
 //     let res = 0;
 //     for(const item of this.transactions) {
@@ -2191,7 +2115,6 @@
 //    return res;
 //  }
 //  };
-
 
 //  account.deposit(300);
 //  account.deposit(300);
@@ -2205,7 +2128,7 @@
 // function makePizza() {
 //     return "Your pizza is being prepared, please wait.";
 //   }
-  
+
 //   const result = makePizza();
 //   const pointer = makePizza;
 // console.log(pointer);
@@ -2214,14 +2137,13 @@
 // function deliverPizza(pizzaName) {
 //     return `Delivering ${pizzaName} pizza.`;
 //   }
-  
+
 //   function makePizza(pizzaName) {
 //     return `Pizza ${pizzaName} is being prepared, please wait...`;
 //   }
-  
+
 //   function makeMessage(pizzaName, callback) {
-    
-    
+
 //     return callback(pizzaName);
 //   }
 
@@ -2232,17 +2154,17 @@
 //     console.log(`Registering ${name}!`);
 //     callback(name);
 //   }
-  
+
 //   // Передаємо інлайн-функцію greet у якості колбека
 //   registerGuest("Mango", function greet(name) {
 //     console.log(`Welcome ${name}!`);
 //   });
-  
+
 //   // Передаємо інлайн-функцію notify у якості колбека
 //   registerGuest("Poly", function notify(name) {
 //     console.log(`Dear ${name}, your room will be ready in 30 minutes`);
 //   });
-  ////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
 //   const numbers = [5, 10, 15, 20, 25];
 
 // // Класичний for
@@ -2256,12 +2178,11 @@
 //     console.log(`Index- ${index}  Value- ${element}`);
 // });
 
-
 // function filterArray(numbers, value) {
 //     const array = [];
 // numbers.forEach(function(item) {
 //     if(item > value) {
-//        array.push(item); 
+//        array.push(item);
 //     }
 // });
 // return array;
@@ -2283,11 +2204,10 @@
 // function calculateTotalPrice(orderedItems) {
 //     let totalPrice = 0;
 //   orderedItems.forEach(item => totalPrice += item);
-    
-  
+
 //     return totalPrice;
 //   }
-  
+
 //   calculateTotalPrice([12, 85, 37, 4]);
 //   calculateTotalPrice([164, 48, 291]);
 //   console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
@@ -2295,22 +2215,22 @@
 // function greet(name) {
 //     console.log(`Welcome ${name}!`);
 //   }
-  
+
 //   function notify(name) {
 //     console.log(`Dear ${name}, your room will be ready in 30 minutes`);
 //   }
-  
+
 //   function registerGuest(name, callback) {
 //     console.log(`Registering ${name}!`);
 //     callback(name);
 //   }
-  
+
 //   registerGuest("Mango", greet); // "Registering Mango!"
 //     // "Welcome Mango!"
-  
+
 //   registerGuest("Mango", notify); // "Registering Mango!"
 // // "Dear Mango, your room will be ready in 30 minutes"
-//  //////////////////////////////////////////////////////////////// 
+//  ////////////////////////////////////////////////////////////////
 
 // function fnA(name, callback) {
 // //console.log(callback);
@@ -2322,7 +2242,6 @@
 
 // fnA("Mariia", fnB)
 
-
 // function calc(a, b, collback) {
 //     const str = "lalala";
 //     console.log(str);
@@ -2330,8 +2249,6 @@
 //     return  collback(a, b);
 
 // }
-
-
 
 // console.log(calc(2, 5, function (x, y) {
 //     return x + y;
@@ -2345,19 +2262,16 @@
 //     let ar = [];
 // for(const item of array) {
 //     ar.push(callback(item))
-    
+
 // }
 // return ar;
 // }
-
 
 // console.log(each(
 //     [34, 24, 15, 67, 49], function(value) {
 //         return value * 2;
 //     }
 // ));
-
-
 
 // console.log(each(
 //     [34, 24, 15, 67, 49], function(value) {
@@ -2373,7 +2287,6 @@
 
 // console.log(calc(12, 10, (x, y) => x * y));
 ////////////////////////////////////////////////////////////////////////////
-
 
 // const logItem = (arr) => {
 
@@ -2409,13 +2322,12 @@
 
 // const calculateAverage = (...args) => {
 //     let total = 0;
-// args.forEach((arg) => 
-//     total += arg 
+// args.forEach((arg) =>
+//     total += arg
 
 // );
 // return total / args.length;
 // }
-
 
 // console.log(calculateAverage(1, 2, 3, 4));
 // console.log(calculateAverage(23, 21, ));
@@ -2453,7 +2365,7 @@
 //       amount: 4
 //     }
 //   ];
-  
+
 // const getModels = (cars) => {
 //      const res= [];
 //      cars.forEach((element) => {
@@ -2465,7 +2377,7 @@
 // ///        ///////////   ///////////    ///////////////    /////////   /
 // const getModels = (cars) => {
 //      return cars.map((element) => `${element.model}!!!`);
-   
+
 // }
 // console.log(getModels(cars));
 ///////////////////////////////////////////////////////////////////////////////
@@ -2505,10 +2417,8 @@
 // //     return cars.map((item) => ({
 // //         ...item,
 // //         price: item.price * (1 - descont),
-            
+
 // //     }));
-    
-    
 
 // // }
 // // console.table(getModels(cars, 0.2));
@@ -2552,15 +2462,14 @@
 // //   ];
 // //   // Збільшуємо кількість годин гравця за id
 // //   const playerIdToUpDate = "player-3";
-  
 
 // //   const nuwArray = players.map((item) => {
 // //     if(item.id === playerIdToUpDate) {
 // //         return {
 // //             ...item,
-// //             timePlayed: item.timePlayed + 100 
+// //             timePlayed: item.timePlayed + 100
 // //         }
-// //     } 
+// //     }
 // //     return item;
 
 // //   })
@@ -2640,8 +2549,7 @@
 // //    return users.filter(user => user.friends.includes(friendName));
 // // }
 
-  
-// //   console.log(getUsersWithFriend(allUsers, "Briana Decker")); 
+// //   console.log(getUsersWithFriend(allUsers, "Briana Decker"));
 // //   // [
 // //   //   {
 // //   //     name: "Sharlene Bush",
@@ -2652,7 +2560,7 @@
 // //   //     friends: ["Goldie Gentry", "Briana Decker"]
 // //   //   }
 // //   // ]
-  
+
 // //   console.log(getUsersWithFriend(allUsers, "Goldie Gentry"));
 // //   // [
 // //   //   {
@@ -2664,7 +2572,7 @@
 // //   //     friends: ["Goldie Gentry", "Briana Decker"]
 // //   //   }
 // //   // ]
-  
+
 // //   console.log(getUsersWithFriend(allUsers, "Adrian Cross" )); // []
 // const books = [
 //     {
@@ -2731,7 +2639,7 @@
 // //     { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
 // //     { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
 // //   ];
-  
+
 // //   const MIN_RATING = 8;
 // //   const AUTHOR = "Bernard Cornwell";
 // // const topRatedBooks = books.filter((ratin) => ratin.rating>= MIN_RATING);
@@ -2739,7 +2647,7 @@
 // // console.log(booksByAuthor);
 
 // const users = [
-    
+
 //         {
 //           name: "Moore Hensley",
 //           email: "moorehensley@indexia.com",
@@ -2840,7 +2748,7 @@
 //   ];
 //   const BOOK_TITLE = "The Dream of a Ridiculous Man";
 //   const AUTHOR = "Robert Sheckley";
-  
+
 //   const bookWithTitle = books.find(book => book.title === BOOK_TITLE);
 //   const bookByAuthor = books.find(book => book.author === AUTHOR);
 // console.log(bookWithTitle);
@@ -2912,7 +2820,7 @@
 //     }
 //   ];
 // // const getUserWithEmail = (users, email) => users.find((user) => user.email === email);
-// const isEveryUserActive = (users) => users.every((user) => user.isActive === true); 
+// const isEveryUserActive = (users) => users.every((user) => user.isActive === true);
 // console.log(getUserWithEmail(users, "shereeanthony@kog.com"));
 // const isAnyUserActive = (users) => users.some(user => user.isActive === true);
 // console.log(isEveryUserActive(users));
@@ -2925,17 +2833,15 @@
 
 // }
 
-
 // console.log(lalallala(users));
 //////////////////////////////////////////////////////////////////////////////////////
 // function isBigNumber(num) {
 //     return num > 50;
 //   }
-  
+
 //   const processItems = (items, callback) => items.filter(callback);
 //     // Використай filter
-  
-  
+
 //   const numbers = [20, 60, 45, 80, 30];
 //   console.log(processItems(numbers, isBigNumber)); // [60, 80]
 //////////////////////////////////////////////////////////////////////////
@@ -2944,12 +2850,12 @@
 
 // const discounted = prices.map((price) => price * (1 - discont));
 // console.log(discounted); // [90, 225, 72]
-  ////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
 //   const users = [
 //     { name: "Ivan", email: "ivan@mail.com" },
 //     { name: "Oksana", email: "oksana@mail.com" },
 //   ];
-  
+
 //   const emails = users.map(/* твоя функція */(user) => user.email);
 //   console.log(emails); // ["ivan@mail.com", "oksana@mail.com"]
 //   /////////////////////////////////////////////////////////////////////////////
@@ -2957,7 +2863,7 @@
 //     { name: "Anna", courses: ["JS", "HTML"] },
 //     { name: "Petro", courses: ["CSS", "React"] },
 //   ];
-  
+
 //   const allCourses = teachers.flatMap(/* твоя функція */(teacher) => teacher.courses);
 //   console.log(allCourses); // ["JS", "HTML", "CSS", "React"]
 // /////////////////////////////////////////////////////////////////////////////
@@ -2967,10 +2873,10 @@
 //     { name: "Mariia", isActive: false },
 //     { name: "Oleh", isActive: true },
 //   ];
-  
+
 //   const activeUsers = users.filter(/* умова */(active) => active.isActive === true);
 //   const mariia = (name) => users.find(/* умова */(mari) => mari.name === name);
-  
+
 //   console.log(activeUsers);
 //   console.log(mariia("Mariia"));
 //////////////////////////////////////////////////////////////////////////////////////
@@ -2982,7 +2888,7 @@
 //     { name: "лао", inStock: true, discount: true },
 //     { name: "дфдфдф", inStock: true, discount: true },
 //   ];
-  
+
 //   const allAvailable = products.every(/* умова */(product) => product.inStock);
 //   const hasDiscount = products.some(/* умова */(product) => product.discount);
 //   const discountedProducts = products.filter(product => product.discount === true);
@@ -2996,12 +2902,11 @@
 //     { name: "Oksana", balance: 2500 },
 //     { name: "Petro", balance: 300 },
 //   ];
-  
+
 //   const total = users.reduce(/* callback, початкове значення */(acum, element) => acum + element.balance, 0);
 //   console.log(total); // 3800
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Знайди імена всіх користувачів, які мають в друзях "Briana Decker".
-
 
 // const users = [
 //   { name: "Ivan", friends: ["Oleh", "Mariia"] },
@@ -3017,7 +2922,6 @@
 ///////////////////////////////////////////////////////////////////////
 //З масиву користувачів порахуй суму балансів тільки активних користувачів.
 
-
 // const users = [
 //   { name: "Ivan", isActive: true, balance: 2000 },
 //   { name: "Mariia", isActive: false, balance: 3000 },
@@ -3026,31 +2930,443 @@
 // const isActiveBalance = users.filter((userIsActive) => userIsActive.isActive)
 // .reduce((acum, element) => acum + element.balance, 0);
 
-// console.log(isActiveBalance);
-////////////////////////////////////////////////////////////////////////////////////
-//У масиві викладачів перевір, чи всі курси унікальні (немає однакових).
+// // console.log(isActiveBalance);
+// ////////////////////////////////////////////////////////////////////////////////////
+// //У масиві викладачів перевір, чи всі курси унікальні (немає однакових).
 
+// // const teachers = [
+// //   { name: "Anna", courses: ["HTML", "CSS"] },
+// //   { name: "Petro", courses: ["JS", "React"] },
+// //   { name: "Ivan", courses: ["Node", "CSS"] }, // "CSS" повторюється
+// // ];
 
-// const teachers = [
-//   { name: "Anna", courses: ["HTML", "CSS"] },
-//   { name: "Petro", courses: ["JS", "React"] },
-//   { name: "Ivan", courses: ["Node", "CSS"] }, // "CSS" повторюється
-// ];
+// // // Результат: false
 
-// // Результат: false
+// // const lalallala = teachers.flatMap((user) => user.courses);
+// // const set = [];
+// // for(const cour of lalallala) {
+// //     if(set.includes(cour)) {
+// //         return false
+// //     }
+// //     return set.push(cour);
 
-// const lalallala = teachers.flatMap((user) => user.courses);
-// const set = [];
-// for(const cour of lalallala) {
-//     if(set.includes(cour)) {
-//         return false
+// // };
+
+// // console.log(lalallala);
+// ////////////////////////////////////////////////////////////////////////////
+// const cars = [
+//     {
+//       brand: "Toyota",
+//       model: "Camry",
+//       year: 2020,
+//       color: "silver",
+//       isElectric: false,
+//       price: 23000
+//     },
+//     {
+//       brand: "Tesla",
+//       model: "Model 3",
+//       year: 2022,
+//       color: "white",
+//       isElectric: true,
+//       price: 45000
+//     },
+//     {
+//       brand: "BMW",
+//       model: "X5",
+//       year: 2019,
+//       color: "black",
+//       isElectric: false,
+//       price: 39000
+//     },
+//     {
+//       brand: "Audi",
+//       model: "Q7",
+//       year: 2021,
+//       color: "blue",
+//       isElectric: false,
+//       price: 52000
+//     },
+//     {
+//       brand: "Nissan",
+//       model: "Leaf",
+//       year: 2023,
+//       color: "green",
+//       isElectric: true,
+//       price: 32000
 //     }
-//     return set.push(cour);
+//   ];
+//   const filterByPrice = (cars, pric) => {
+//     return cars.find((item) => item.year > pric);
 
+//   }
+
+// console.table(filterByPrice(cars, 2022));
+//////////////////////////////////////////////////////////////////////
+// const pizzaPalace = {
+//     pizzas: ["Supercheese", "Smoked", "Four meats"],
+//     checkPizza(pizzaName) {
+//       return this.pizzas.includes(pizzaName);
+//     },
+//     order(pizzaName) {
+//       const isPizzaAvailable = this.checkPizza(pizzaName);
+
+//       if (!isPizzaAvailable) {
+//         return `Sorry, there is no pizza named «${pizzaName}»`;
+//       }
+
+//       return `Order accepted, preparing «${pizzaName}» pizza`;
+//     },
+//   };
+//   console.log(pizzaPalace.order("Viennese"));
+// console.log(pizzaPalace.order("Big Mike"));
+// console.log(pizzaPalace.order("Four meats"));
+// //////////////////////////////////////////////////////////////////////
+// const ancestor = {
+//     name: "Paul",
+//     age: 83,
+//     surname: "Dawson",
+//     heritage: "Irish",
+//   };
+
+//   const parent = Object.create(ancestor);
+//   parent.name = "Stacey";
+//   parent.surname = "Moore";
+//   parent.age = 54;
+
+//   const child = Object.create(parent);
+//   child.name = "Jason";
+//   child.age = 27;
+//   console.log(ancestor.isPrototypeOf("parent"));
+// console.log(child);
+///////////////////////////////////////////////////////////////////
+
+// class Car {
+//     constructor(brand, model, price) {
+//       this.brand = brand;
+//       this.model = model;
+//       this.price = price;
+//     }
+//   }
+//   const audi = new Car("Audi", "Q3", 36000);
+//   const bmw = new Car("BMW", "X5", 58900);
+//   const nissan = new Car("Nissan", "Murano", 31700);
+// console.log(audi);
+//////////////////////////////////////////////////////////////////////
+// const chopShop = {
+//      stones: [
+//         { name: "Diamond", weight: 1.2, color: "clear", price: 5000, quantity: 3 },
+//         { name: "Ruby", weight: 0.8, color: "red", price: 3000, quantity: 5 },
+//         { name: "Emerald", weight: 1.0, color: "green", price: 2800, quantity: 2 },
+//         { name: "Sapphire", weight: 0.9, color: "blue", price: 2700, quantity: 4 },
+//         { name: "Topaz", weight: 1.5, color: "yellow", price: 1900, quantity: 6 }
+//       ],
+
+//       calcTotalPraice(stoneName) {
+//         const quantiti = this.stones.find((stone) => stone.name === stoneName);
+//         if(!quantiti) {
+//             return `${stoneName} is not`;
+//         }
+//         return quantiti.price * quantiti.quantity;
+
+//       }
+
+// }
+// console.log(chopShop.calcTotalPraice("lalala"));
+// ///////////////////////////////////////////////////////////////////////////////////////////////
+// function changeColor(color) {
+//     this.color = color;
+// }
+
+// const hat = {
+//     color: "red"
+// }
+
+// const switer = {
+//     color: "black"
+// }
+
+// changeColor.call(hat, "blue");
+// console.log(hat);
+
+// // changeColor.apply(switer, ["yeloow"]);
+// // console.log(switer);
+
+// const changeColorSwiter = changeColor.bind(switer,);
+// changeColorSwiter("negro");
+// console.log(switer);
+//////////////////////////////////////////////////////////
+
+// const animal = {
+//     legs: 4,
+//     color: "red",
+//     citi: " Malaga"
+// }
+// const dog = Object.create(animal);
+// dog.name = "Patron";
+// dog.age = 10
+// // console.log(dog.hasOwnProperty("legs")
+// // );
+// // for(const key in dog) {
+// //     if(dog.hasOwnProperty(key)) {
+// //         console.log(key, dog[key]);
+// //     }
+
+// // }
+// const keys = Object.keys(dog);
+
+// console.log(keys);
+//////////////////////////////////////////////////////////
+
+// const objC = { c: "objC" };
+
+// const objB = Object.create(objC);
+// objB.b = "objB";
+
+// const objA = Object.create(objB);
+// objA.a = "objA";
+
+// console.log(objA);
+// console.log(objA.b);
+// console.log(objA.hasOwnProperty("b"));
+// //console.log(objC);
+// const cruiseControl = {
+//   speed: 0,
+//   brand: 'Audi',
+//   arcelerate() {
+//     this.speed += 10;
+//     console.log(
+//       `Автомобіль ${this.brand} прискорюється. Швидкість ${this.speed}`
+//     );
+//   },
+//   decrease() {
+//     if (this.speed <= 0) {
+//       console.log(`Avtomobil ${this.brand} zupinivsya`);
+//       return;
+//     }
+//     this.speed -= 10;
+//     console.log(
+//       `Автомобіль ${this.brand} гальмує. Швидкість ${this.speed}`
+//     );
+//   },
 // };
+// cruiseControl.arcelerate();
+// cruiseControl.arcelerate();
+// cruiseControl.decrease();
+// cruiseControl.decrease();
+// cruiseControl.decrease();
+// console.log(cruiseControl);
+/////////////////////////////////////////////////////////////////////////////
+
+// const Max_Speed = 60;
+
+// const audi = {
+//     brand: "Audi",
+//     speed: 30
+// }
 
 
-// console.log(lalallala);
+// const bmw = {
+//     brand: "BMW",
+//     speed: 70
+// }
+//     function speedSensor(maxSpeed) {
+//         if(this.speed <= maxSpeed) {
+//             return `Coche ${this.brand} tiene velocidad corecta`;
+
+//         }
+//         return `${this.brand} - velocidad muy alta`;
+
+//     }
+
+// console.log(speedSensor.call(audi, Max_Speed));
+// console.log(speedSensor.call(bmw, Max_Speed));
+
+
+
+// const customer = {
+//     username: "Mango",
+//     balance: 24000,
+//     discount: 0.1,
+//     orders: ["Burger", "Pizza", "Salad"],
+//     // Change code below this line
+//     getBalance() {
+//       return this.balance;
+//     },
+//     getDiscount() {
+//       return this.discount;
+//     },
+//     setDiscount(value) {
+//       this.discount = value;
+//     },
+//     getOrders() {
+//       return this.orders;
+//     },
+//     addOrder(cost, order) {
+//       this.balance -= cost - cost * this.discount;
+//       this.orders.push(order);
+//     },
+//     // Change code above this line
+//   };
+  
+//   customer.setDiscount(0.15);
+//   console.log(customer.getDiscount()); // 0.15
+//   customer.addOrder(5000, "Steak");
+//   console.log(customer.getBalance()); // 19750
+//   console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]
+  ////////////////////////////////////////////////////////////////////////////////////////////////
+  // class Car {
+//     constructor(brand, model, price) {
+//       this.brand = brand;
+//       this.model = model;
+//       this.price = price;
+//     }
+//   }
+//   const audi = new Car("Audi", "Q3", 36000);
+//   const bmw = new Car("BMW", "X5", 58900);
+//   const nissan = new Car("Nissan", "Murano", 31700);
+// console.log(audi);
+
+// class Storage {
+//     constructor(items) {
+//        this.items = items; 
+//     }
+//     getItems() {
+//         return this.items;
+//     }
+//     addItem(newItem) {
+//         this.items.push(newItem);
+//     }
+
+//     removeItem(itemToRemove) {
+//         this.items = this.items.filter((element) => element !== itemToRemove);
+        
+//     }
+// }
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
+// storage.removeItem("Scaner");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// class StringBuilder {
+//     constructor(initialValue) {
+//         this.value = initialValue;
+//     }
+//     getValue() {
+//        return `"${this.value}"`;
+
+//     }
+//     padEnd(str) {
+//         this.value = `${this.value}${str}`;
+//     }
+//     padStart(str) {
+//         this.value = `${str}${this.value}`;
+
+//     }
+//     padBoth(str) {
+//         this.value = `${str}${this.value}${str}`;
+
+//     }
+// }
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // "."
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
