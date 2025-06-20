@@ -1,105 +1,170 @@
-//Завдання 1:
+// const listWithId = document.querySelector('#menu');
+// listWithId.style.textTransform = 'uppercase';
+// listWithId.style.fontSize = '24px';
+// console.log(listWithId);
 
-// Дано масив чисел [1, 2, 3, 4, 5]. Створіть новий масив, що містить 
-// квадрати кожного елементу вхідного масиву. 
-// Очікуваний результат: [1, 4, 9, 16, 25].
+// const listWithClass = document.querySelector('.menu');
+// console.log(listWithClass);
 
-//  const numbers = [1, 2, 3, 4, 5];
-//  const squares = numbers.map((num) => num * num);
-//  console.log(squares);
- /////////////////////////////////////////////////////////////
- //Завдання 2:
+// const menuItemsByTagName = document.querySelectorAll("li");
+// console.log(menuItemsByTagName);
 
-// Дано масив об'єктів. Створіть новий масив, що містить всі значення 
-// з масивів values кожного об'єкту, збережених в одному масиві. 
-// Очікуваний результат: [1, 2, 3, 4, 5, 6, 7, 8, 9].
+// const menuItemsByClass = document.querySelectorAll(".menu-item");
+// console.log(menuItemsByClass);ç
+/////////////////////////////////////////////////////////////////////////////
 
-// const data = [
-//  { id: 1, values: [1, 2, 3] },
-//  { id: 2, values: [4, 5, 6] },
-//  { id: 3, values: [7, 8, 9] },
-// ];
-  
-// const array = data.flatMap((ar) => ar.values);
-// console.log(array);
-////////////////////////////////////////////////////////////////////////
-// //Завдання 5:
-
-// // Знайдіть перше непарне число
-
-// const numbers = [2, 1, 6, 8, 9, 10, 12];
-// const evenNumber = numbers.find(num => num % 2 !== 0);
-// console.log(evenNumber);
-/////////////////////////////////////////////////////////////////////////////////////////
-//Завдання 6:
-
-// Відсортуйте масив чисел [4, 2, 5, 1, 3] 
-// у порядку зростання. Очікуваний результат: [1, 2, 3, 4, 5].
-
-// const numbersArray = [4, 2, 5, 1, 3];
-
-
-// const array = numbersArray.toSorted((a, b) => a - b);
-// console.log(array);  // [1, 2, 3, 4, 5]    
-//////////////////////////////////////////////////////////////////////////
-//Завдання 7:
-
-// Відсортуйте масив рядків ["banana", "orange", "apple", "pear"]
-//  у порядку алфавіту. 
-// Очікуваний результат: ["apple", "banana", "orange", "pear"].
-// const stringArray = ['banana', 'orange', 'apple', 'pear'];
-// const array = stringArray.toSorted((a, b) => a.localeCompare(b));
-
-// console.log(array);
-//////////////////////////////////////////////////////////////////////////////////////
-//Завдання 8:
-
-//  Відсортуйте масив об'єктів за віком у порядку зростання. 
-// Очікуваний результат: [{name: "Bob", age: 19}, {name: "John", age: 27}, {name: "Jane", age: 31}].
-
-// const users = [
-//  { name: 'John', age: 27 },
-//  { name: 'Jane', age: 31 },
-//  { name: 'Bob', age: 19 },
-
-// ];
-// const array = users.map((ar) => ar.age).toSorted((a, b) => a - b);
-
-// console.log(array);
-//////////////////////////////////////////////////////////////////////////////////
-//Завдання 9:
-
-// Дано масив об'єктів. 
-// Створіть новий масив, що містить тільки об'єкти, в яких 
-// вік більше 20 років. 
-// Очікуваний результат: [{name: "John", age: 27}, {name: "Jane", age: 31}]
-// Знайди імена користувачів, яким більше 25 років.
-// Поверни true, якщо всі користувачі старші за 18.
-// const user = [
-//  { name: 'John', age: 27 },
-//  { name: 'Jane', age: 31 },
-//  { name: 'Bob', age: 19 },
-// ]
-
-// //const nuwArray = user.filter((item) => item.age > 25)
-//  //                    .map((user) => user.name);
-//  const adultos = user.every((adultos) => adultos.age > 18);
-//  console.log(adultos);
-
-// //console.log(nuwArray);
-
+// const image = document.querySelector(".image");
+// console.log(image.src);
+// console.log(image.alt);
+// image.src = "https://picsum.photos/id/13/640/480";
+// image.alt = "River bank";
+// image.width = "100"
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-//Завдання 10:
+// const lalala = document.querySelector(".article-text");
+// console.log(lalala.textContent);
+// const popo = document.querySelector(".article-title");
+// console.log(popo.textContent);
+// const texttt = document.querySelector("p");
 
-// Дано масив чисел [1, 2, 3, 4, 5]. 
-// Застосуйте метод для обчислення суми елементів масиву.
+// lalala.classList.add("text");
+// lalala.classList.remove(".article-text")
+// console.log(lalala);
+// console.log(texttt);
+//////////////////////////////////////////////////////////////////////////////////////
+// const link = document.querySelector(".link");
+// console.log(link.classList);
+// console.log(link.attributes);
 
-// const numbers = [1, 2, 3, 4, 5];
+//  const hasActiveClass = link.classList.contains("is-active");
+//  console.log(`hasActiveClass - ${hasActiveClass}`);
+
+//  link.classList.add("special");
+//   console.log(link.classList);
+
+//  link.classList.remove("is-active");
+//  console.log(link.classList);
+
+//  link.classList.toggle("is-active");
+//  console.log(link.classList);
+
+//  link.classList.replace("special", "regular");
+//  console.log(link.classList);
 
 
+// const image = document.querySelector(".image");
+
+// console.log(image.attributes); // w
+// image.setAttribute("alt", "Buenos dias");
+// console.log(image.getAttribute("alt"));
+// console.log(image);
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// const saveBtn = document.querySelector('.editor button[data-action="save"]');
+// const closeBtn = document.querySelector('.editor button[data-action="close"]');
+// //console.log(saveBtn);
+// // console.log(saveBtn.dataset.action); //save
+// // console.log(closeBtn.dataset.action); //close
+
+// saveBtn.dataset.action = "lalalala";
+// console.log(saveBtn.dataset.action);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+// const heading = document.createElement("h1");
+
+// heading.classList.add("title");
+
+// heading.textContent = "Eso mi texsto" ;
+// console.log(heading);
+
+// const image = document.createElement("img");
+// image.classList.add("text");
+// image.src = "https://picsum.photos/id/11/320/240";
+// image.alt = "Nature";
+
+// console.log(image);
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// const booton = document.querySelector(".editor");
+
+// const lista = document.querySelector("#menu");
 
 
+// console.log(lista.children[2]);
+//  const but = document.querySelector(".editor button[data-action='close']");
+ 
+//  but.textContent = "Serar";
 
+// console.log(but.classList.contains("btn"));
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+// const title = document.createElement("h1");
+
+
+// // title.classList.add("text");
+// // console.log(title);
+// // title.textContent = "Hello";
+// // document.body.append(title);
+
+// // const imagen = document.createElement("img");
+// // imagen.src = "https://picsum.photos/id/15/320/240";
+// // imagen.alt = "Rocks and waterfall";
+// // imagen.width = "300";
+// // document.body.append(imagen);
+// // booton.append(title, imagen);
+// //////////////////////////////////////////////////////////////////////////////////
+// // const navElLi = document.createElement("li");
+// // navElLi.classList.add("menu-item");
+
+
+// // const navLinc = document.createElement("a");
+// // navLinc.classList.add("link", "is-active");
+// // navLinc.href = "#";
+// // navLinc.textContent = "Que tal";
+
+// // navElLi.append( navLinc);
+// // lista.append(navElLi);
+// // console.log(lista);
+// ///////////////////////////////////////////////////////////////////////////////////
+// const colors = [
+//     {
+//       name: "Red",
+//       hex: "#FF0000",
+//       rgb: "rgb(255, 0, 0)"
+//     },
+//     {
+//       name: "Green",
+//       hex: "#00FF00",
+//       rgb: "rgb(0, 255, 0)"
+//     },
+//     {
+//       name: "Blue",
+//       hex: "#0000FF",
+//       rgb: "rgb(0, 0, 255)"
+//     },
+//     {
+//       name: "Gold",
+//       hex: "#FFD700",
+//       rgb: "rgb(255, 215, 0)"
+//     },
+//     {
+//       name: "DeepPink",
+//       hex: "#FF1493",
+//       rgb: "rgb(255, 20, 147)"
+//     }
+//   ];
+  
+//   console.log(colors);
+//   const arrColor = document.querySelector(".editor");
+//   console.log(arrColor);
+//    const lalala = colors.map((element) => {
+//     const button = document.createElement("button");
+//     button.classList.add("btn");
+//     button.textContent = element.name;
+//     button.style.backgroundColor = element.hex;
+//     return button;
+//    })
+//   arrColor.prepend(...lalala);
+//////////////////////////////////////////////////////////////////////////////////////////
 
 
 
