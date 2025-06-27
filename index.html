@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <ul id="menu" class="menu">
@@ -13,7 +14,7 @@
       <li>blog</li>
     </ul>
     <a class="link is-active" href="">A random link</a>
-    
+    <h1 class="title">Доброго дня! Нажміть <span>сюда</span>. </h1>
     <div class="editor">
       <img class="image" src="https://picsum.photos/id/15/320/240" alt="Rocks and waterfall" width="300" />
       
@@ -23,6 +24,61 @@
           <button type="button" class="btn" data-action="close">Close editor</button>
         </div>
       </div>
+
+      <article class="article">
+        <h2 class="title">Article title</h2>
+        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, ipsa quibusdam! <strong>Praesentium</strong> accusantium fugiat distinctio quidem minima fugit eos, veniam, nam laboriosam deleniti nisi qui neque explicabo perspiciatis, consectetur non.</p>
+        <a class="link" href="">Read more</a>
+      </article>
+      <button class="my-button">Ivan</button>
+      <button id="myBtn">Натисни мене</button>
+      <div class="js-div">
+        <div class="red-square"></div>
+      </div>
+      <input type="text" class="js-user-name" />
+      <input type="checkbox" class="js-checkbox"/>
+
+
+
+      <table class="transaction-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Who</th>
+            <th>Transaction Type</th>
+            <th>Name</th>
+            <th>Account Number</th>
+
+            
+
+          </tr>
+        </thead>
+
+      </table>
+      <div>
+      <form method="post" class="form-container">
+        <div>
+        <label for="name">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Tu nombre">
+      </div>
+
+      <div>
+        <label for="email">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Escribe su email">
+      </div>
+      
+      <div>
+        <label for="message">Mensaje:</label>
+        <textarea type="message" id="message" name="comment" placeholder="Escribe su mensaje" ></textarea>
+      </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+      
 
     <script src="./js/lesson-1.js"></script>
     <script src="./js/lesson-3.js"></script>

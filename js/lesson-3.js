@@ -153,9 +153,9 @@
 //     }
 //   ];
   
-//   console.log(colors);
+  
 //   const arrColor = document.querySelector(".editor");
-//   console.log(arrColor);
+  
 //    const lalala = colors.map((element) => {
 //     const button = document.createElement("button");
 //     button.classList.add("btn");
@@ -164,7 +164,131 @@
 //     return button;
 //    })
 //   arrColor.prepend(...lalala);
-//////////////////////////////////////////////////////////////////////////////////////////
+/////////   //////////////       /////////////     /////////////   ////////////////////////////////////
+
+// const createMarcap = (option) => {
+//     return option.map((element) => {
+//         const button = document.createElement("button");
+//         button.classList.add("btn");
+//         button.textContent = element.name;
+//         button.style.backgroundColor = element.hex;
+//         return button;
+//     })
+// }
+
+// console.log(createMarcap(colors));
+// arrColor.prepend(...createMarcap(colors));
+
+/////////////////////////////////////////////////////
+
+
+// const linkH1 = document.querySelector(".title");
+
+// //linkH1.innerHTML = '<a href="#"Pulse linc></a>';
+// // linkH1.insertAdjacentHTML("afterbegin", '<a href="#">Pulse link</a> ');
+
+
+// const dataSave = document.querySelector(".title")
+// dataSave.innerHTML = 'New and <span class="accent">improved</span> title';
+
+// //dataSave.textContent
+
+// console.log(dataSave.innerHTML);
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// const article = document.querySelector(".article");
+
+// const arr =["HTML", "CSS", "JavaScript", "React", "Node"];
+
+// const lalala = arr.map((tegnologi) => ` <a class="popo" href="#">${tegnologi}</a> `).join("");
+// console.log(lalala);
+// article.innerHTML = lalala;
+// console.log(lalala.innerHTML);
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+// const button = document.querySelector(".my-button");
+// const ofClic = () => {
+//     console.log("Завтра їдемо на море");
+//   }
+// button.addEventListener("click", ofClic);
+// button.removeEventListener("click", ofClic)
+////////////////////////////////////////////////////////////////////////
+
+// const button = document.querySelector(".my-button");
+
+
+
+// const handleClick = event => {
+//     console.log(event);
+//     console.log("curenTarget", event.currentTarget);
+//   };
+  
+//   button.addEventListener("click", handleClick);
+  
+//   const btn = document.getElementById("myBtn");
+
+  // Перший аргумент — тип події, другий — функція-обробник
+
+  
+//   btn.addEventListener("click", function(event) {
+//     console.log("Тип:", event.type);           // "click"
+//     console.log("Ціль:", event.target);        // елемент, по якому клікнули
+//     console.log("Координати миші:", event.clientX, event.clientY);
+//   });
+  
+//   btn.addEventListener("click", handler, true);
+
+//////////////////////////////////////////////////////////////////////
+// const btn = document.querySelector("#myBtn");
+// const square = document.querySelector(".red-square");
+
+// btn.addEventListener("click", handleClick);
+// square.addEventListener("click", handleClick);
+// let step = 0;
+// function handleClick() {
+//     step += 50;
+//     square.style.marginTop = `${step}px`;
+//     square.style.marginLeft = `${step}px`;
+// };
+////////////////////////////////////////////////////////////////////
+
+// const checkbox = document.querySelector(".js-checkbox");
+
+// // checkbox.addEventListener("change", () => {
+// // console.log("lalala");
+// // });
+// const userName = document.querySelector(".js-user-name");
+// // userName.addEventListener("input", (event) => {
+// //     console.log(event.target);
+// // });
+// userName.addEventListener("blur", lalala);
+
+
+
+// function lalala(event) {
+//     const name = event.target.value;
+//     alert(`Hello ${name}`);
+    
+// };
+////////////////////////////////////////////////////////////////////////
+
+const form = document.querySelector(".form-container");
+form.addEventListener("submit", handleSubmit);
+
+function handleSubmit(event) {
+  event.preventDefault();
+  const elements = event.target.elements;
+  
+  const info = {
+    email: elements.email.value,
+    password: elements.password.value,
+    mensaje: elements.comment.value
+  }
+  console.log(info);
+
+};
+
 
 
 
