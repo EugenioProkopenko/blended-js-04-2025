@@ -14,73 +14,187 @@
       <li>blog</li>
     </ul>
     <a class="link is-active" href="">A random link</a>
-    <h1 class="title">Доброго дня! Нажміть <span>сюда</span>. </h1>
+    <h1 class="title">Доброго дня! Нажміть <span>сюда</span>.</h1>
     <div class="editor">
-      <img class="image" src="https://picsum.photos/id/15/320/240" alt="Rocks and waterfall" width="300" />
-      
-        <p>Donec id justo. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Curabitur suscipit suscipit tellus. Phasellus gravida semper nisi.</p>
-        <div class="actions">
-          <button type="button" class="btn" data-action="save">Save text</button>
-          <button type="button" class="btn" data-action="close">Close editor</button>
-        </div>
+      <img
+        class="image"
+        src="https://picsum.photos/id/15/320/240"
+        alt="Rocks and waterfall"
+        width="300"
+      />
+
+      <p>
+        Donec id justo. Praesent porttitor, nulla vitae posuere iaculis, arcu
+        nisl dignissim dolor, a pretium mi sem ut ipsum. Curabitur suscipit
+        suscipit tellus. Phasellus gravida semper nisi.
+      </p>
+      <div class="actions">
+        <button type="button" class="btn" data-action="save">Save text</button>
+        <button type="button" class="btn" data-action="close">
+          Close editor
+        </button>
       </div>
+    </div>
 
-      <article class="article">
-        <h2 class="title">Article title</h2>
-        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, ipsa quibusdam! <strong>Praesentium</strong> accusantium fugiat distinctio quidem minima fugit eos, veniam, nam laboriosam deleniti nisi qui neque explicabo perspiciatis, consectetur non.</p>
-        <a class="link" href="">Read more</a>
-      </article>
-      <button class="my-button">Ivan</button>
-      <button id="myBtn">Натисни мене</button>
-      <div class="js-div">
-        <div class="red-square"></div>
-      </div>
-      <input type="text" class="js-user-name" />
-      <input type="checkbox" class="js-checkbox"/>
+    <article class="article">
+      <h2 class="title">Article title</h2>
+      <p class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, ipsa
+        quibusdam! <strong>Praesentium</strong> accusantium fugiat distinctio
+        quidem minima fugit eos, veniam, nam laboriosam deleniti nisi qui neque
+        explicabo perspiciatis, consectetur non.
+      </p>
+      <a class="link" href="">Read more</a>
+    </article>
 
+    <button class="my-button">Ivan</button>
+    <button id="myBtn">Натисни мене</button>
 
+    <div class="js-div">
+      <div class="red-square"></div>
+    </div>
+    <input type="text" class="js-user-name" />
+    <input type="checkbox" class="js-checkbox" />
 
-      <table class="transaction-table">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Amount</th>
-            <th>Date</th>
-            <th>Who</th>
-            <th>Transaction Type</th>
-            <th>Name</th>
-            <th>Account Number</th>
-
-            
-
-          </tr>
-        </thead>
-
-      </table>
-      <div>
+    <table class="transaction-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Amount</th>
+          <th>Date</th>
+          <th>Who</th>
+          <th>Transaction Type</th>
+          <th>Name</th>
+          <th>Account Number</th>
+        </tr>
+      </thead>
+    </table>
+    <div>
       <form method="post" class="form-container">
         <div>
-        <label for="name">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Tu nombre">
-      </div>
+          <label for="name">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Tu nombre" />
+        </div>
 
-      <div>
-        <label for="email">Password:</label>
-        <input type="password" id="password" name="password" placeholder="Escribe su email">
-      </div>
-      
-      <div>
-        <label for="message">Mensaje:</label>
-        <textarea type="message" id="message" name="comment" placeholder="Escribe su mensaje" ></textarea>
-      </div>
+        <div>
+          <label for="email">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Escribe su email"
+          />
+        </div>
+
+        <div>
+          <label for="message">Mensaje:</label>
+          <textarea
+            type="message"
+            id="message"
+            name="comment"
+            placeholder="Escribe su mensaje"
+          ></textarea>
+        </div>
 
         <button type="submit">Enviar</button>
       </form>
     </div>
 
+    <div class="outer-box">
+      <div class="inner-box"></div>
+    </div>
+
+    <form action="submit" class="js-form car-search">
+      <div class="car-group">
+        <input type="text" name="query" class="car-input" placeholder="Car" />
+      </div>
+      <div class="car-group">
+        <select name="options" class="car-select">
+          <option value="brand">Марка</option>
+          <option value="model">Модель</option>
+        </select>
+      </div>
+      <button type="submit" class="car-button">Пошук</button>
+    </form>
+    <ul class="js-list car-list"></ul>
+    <!--З використанням властивостей і методів DOM-елементів, напиши скрипт, який:
+
+Порахує й виведе в консоль кількість категорій в ul#categories, тобто елементів li.item.
+Для кожного елемента li.item у списку ul#categories знайде й виведе в консоль текст заголовка елемента (тегу <h2>) і кількість елементів у категорії (усіх <li>, вкладених у нього).
+---->
+    <ul id="categories">
+      <li class="item">
+        <h2>Animals</h2>
+        <ul>
+          <li>Cat</li>
+          <li>Hamster</li>
+          <li>Horse</li>
+          <li>Parrot</li>
+        </ul>
+      </li>
+      <li class="item">
+        <h2>Products</h2>
+        <ul>
+          <li>Bread</li>
+          <li>Parsley</li>
+          <li>Cheese</li>
+        </ul>
+      </li>
+      <li class="item">
+        <h2>Technologies</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+        </ul>
+      </li>
+    </ul>
+    <!-------------------------------------------------------------------------->
+    <ul class="gallery"></ul>
+    
+
+    <!-------------------------------------------------------------------------->
+    <!----Напиши скрипт, який під час набору тексту в інпуті input#name-input (подія input) підставляє його поточне значення в span#name-output як ім’я для привітання. Обов’язково очищай значення в інпуті по краях від пробілів . Якщо інпут порожній або містить лише пробіли, то замість імені у спан має підставлятися рядок "Anonymous".-->
+    <input type="text" id="name-input" placeholder="Please enter your name" />
+    <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
+
+    <!---------------Напиши скрипт управління формою логіна.------------------------------------------------------------------------>
+
+    <form class="login-form">
+      <label>
+        Email
+        <input type="email" name="email" />
+      </label>
+      <label>
+        Password
+        <input type="password" name="password" />
+      </label>
+      <button type="submit">Log in</button>
+    </form>
+    <!-------------------Напиши скрипт, який змінює колір фону елемента <body> через 
+      інлайн-стиль по кліку на button.change-color і задає це значення кольору текстовим
+       вмістом для span.color.-------------------->
+       <h4>HTML 174</h4>
+       <div class="widget">
+        <p>Background color: <span class="color">-</span></p>
+        <button type="button" class="change-color">Change color</button>
+      </div>
       
+      <ul>
+        <li class="listaa">Пункт 1</li>
+        <li class="listaa">Пункт 2</li>
+      </ul>
+      <p class="output">Selected color: -</p>
+<div class="color-palette"></div>
+<!---------------------------Домашнє завдання №8----------------------------------------->
+<!---Створи галерею з можливістю кліку по її елементах і перегляду повнорозмірного зображення в модальному вікні------------------>
+<ul class="gallery-segundo"></ul>     
+
 
     <script src="./js/lesson-1.js"></script>
+    <script src="./js/lesson-2.js"></script>
     <script src="./js/lesson-3.js"></script>
   </body>
 </html>

@@ -34,7 +34,7 @@
   
 
 
-
+/********************************************************/
 
   
   .form-container {
@@ -107,3 +107,101 @@
   .form-submit:hover {
     background-color: #005fa3;
   }
+
+
+/***************************************************************/
+
+
+
+  .outer-box {
+    width: 300px;
+    height: 300px;
+    background-color: #4CAF50; /* зелений */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    border: 2px solid #2E7D32;
+    border-radius: 8px;
+  }
+
+  .inner-box {
+    width: 150px;
+    height: 150px;
+    background-color: #FF5722; /* помаранчевий */
+    border: 2px solid #E64A19;
+    border-radius: 4px;
+  }
+  .box-ectiv {
+    background-color: #f70424fa;
+  }
+
+/*****************************************/
+
+
+/* Загальний стиль для форми */
+  .car-search {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Групування елементів */
+  .car-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Стиль для інпуту */
+  .car-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+  
+  /* Стиль для селекта */
+  .car-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    background-color: white;
+    box-sizing: border-box;
+  }
+  
+  /* Кнопка */
+  .car-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e88e5;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .car-button:hover {
+    background-color: #1565c0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+

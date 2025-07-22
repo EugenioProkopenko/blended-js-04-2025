@@ -228,7 +228,7 @@
   
 //   const btn = document.getElementById("myBtn");
 
-  // Перший аргумент — тип події, другий — функція-обробник
+//   //Перший аргумент — тип події, другий — функція-обробник//
 
   
 //   btn.addEventListener("click", function(event) {
@@ -273,48 +273,432 @@
 // };
 ////////////////////////////////////////////////////////////////////////
 
-const form = document.querySelector(".form-container");
-form.addEventListener("submit", handleSubmit);
+// const form = document.querySelector(".form-container");
+// form.addEventListener("submit", handleSubmit);
 
-function handleSubmit(event) {
-  event.preventDefault();
-  const elements = event.target.elements;
+// function handleSubmit(event) {
   
-  const info = {
-    email: elements.email.value,
-    password: elements.password.value,
-    mensaje: elements.comment.value
-  }
-  console.log(info);
+//   event.preventDefault();
+//   const elements = event.target.elements;
+  
+//   const info = {
+//     email: elements.email.value,
+//     password: elements.password.value,
+//     mensaje: elements.comment.value
+//   }
+//   console.log(info);
 
+  
+// form.reset();
+// };
+ ////////////////////////////////////////////////////////////////////////////////
+
+
+//     document.addEventListener("keydown", lalala);
+// function lalala(event) {
+//   if(event.ctrlKey && event.code === "KeyC") {
+//     console.log("lalal");
+//     event.preventDefault();
+ 
+//   }
+
+// }
+///////////////////////////////////////////////////////////////////
+
+// const box1 = document.querySelector(".outer-box");
+// const box2 = document.querySelector(".inner-box");
+
+// box1.addEventListener("mouseenter", lalala);
+// box2.addEventListener("mouseleave", papapa)
+
+// function lalala() {
+//   console.log("mouseenter");
+//   box1.classList.add("box-ectiv");
+// }
+// function papapa() {
+//   console.log("mouseleave");
+//   box1.classList.remove("box-ectiv");
+// }
+// ////////////////////////////////////////////////////////////////////////////
+// const box1 = document.querySelector(".outer-box");
+
+
+// box1.addEventListener("mouseover", lalala);
+// box1.addEventListener("mouseout", papapa)
+
+// function lalala() {
+//   console.log("mouseover");
+  
+// }
+// function papapa() {
+//   console.log("mouseout");
+  
+// }
+
+/////////////////////////////////////////////////////////////////////
+// const box1 = document.querySelector(".outer-box");
+
+//  box1.addEventListener("mousemove", lalala);
+// function lalala(event) {
+//   console.log(event);
+
+// }
+//////////////////////////////////////////////////////////////////////////////////
+
+// const cars = [
+//   {
+//     id: 1,
+//     brand: "Toyota",
+//     model: "Corolla",
+//     year: 2021,
+//     color: "silver",
+//     price: 18000,
+//     isElectric: false,
+//     img: "https://images.coches.com/_vn_/toyota/bz4X/f8986c75b777886a1c1da37d10e4d910.jpg?w=768&h=508&func=fit"
+//   },
+//   {
+//     id: 2,
+//     brand: "Tesla",
+//     model: "Model 3",
+//     year: 2022,
+//     color: "white",
+//     price: 35000,
+//     isElectric: true,
+//     img: "https://imagenes.km77.com/fotos/bbtcontent/clippingnew/KM7KPH20240205_0092/full.jpg?_gl=1*18rjyv7*_ga*NTYzMjA0NTcyLjE3NTEyODE3MzQ.*_ga_6YFP9YXPMX*czE3NTEyODE3MzMkbzEkZzAkdDE3NTEyODE3MzMkajYwJGwwJGgw"
+//   },
+//   {
+//     id: 3,
+//     brand: "Ford",
+//     model: "Mustang",
+//     year: 2020,
+//     color: "red",
+//     price: 27000,
+//     isElectric: false,
+//     img: "https://img.remediosdigitales.com/a07985/ford-mustang-mach-e-gt-2021-03/1366_2000.jpeg"
+//   },
+//   {
+//     id: 4,
+//     brand: "BMW",
+//     model: "X5",
+//     year: 2023,
+//     color: "black",
+//     price: 60000,
+//     isElectric: false,
+//     img: "https://fotos.estaticosmf.com/fotos_anuncios/00/06/09/58/23/0/g03.jpg"
+//   },
+//   {
+//     id: 5,
+//     brand: "Nissan",
+//     model: "Leaf",
+//     year: 2021,
+//     color: "blue",
+//     price: 24000,
+//     isElectric: true,
+//     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/2018_Nissan_Leaf_Tekna_Front.jpg/1920px-2018_Nissan_Leaf_Tekna_Front.jpg"
+//   },
+//   {
+//     id: 5,
+//     brand: "Nissan",
+//     model: "sisis",
+//     year: 2021,
+//     color: "blue",
+//     price: 24000,
+//     isElectric: true,
+//     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/2018_Nissan_Leaf_Tekna_Front.jpg/1920px-2018_Nissan_Leaf_Tekna_Front.jpg"
+//   }
+// ];
+
+// console.log(cars);
+// const form = document.querySelector(".car-search");
+// const conteiner = document.querySelector(".car-list");
+// function createMarcup(arr) {
+//   return arr.map((item) => `
+//   <li class="car-card" data-id="${item.id}">
+//   <img src="${item.img}" alt="${item.brand}" class="car-imag"/>
+//   <h2 class="car-title">${item.brand}</h2>
+//   <h3 class="car-model">${item.model}</h3>
+//   <span class="car-price">${item.price} $</span>
+//   </li>
+//  `).join("");
+
+// }
+// conteiner.style.display = "flex";
+// conteiner.style.flexWrap = "wrap";
+// conteiner.style.gap = "25px";
+// conteiner.insertAdjacentHTML("beforeend", createMarcup(cars));
+// //console.log(createMarcup(cars));
+
+
+// form.addEventListener("submit", handleSubmint);
+
+// function handleSubmint(event) {
+//   event.preventDefault();
+  
+//   const query = event.target.elements.query.value.trim();
+//   const optionsValue = event.target.elements.options.value;
+
+//   const result = cars.filter((item) => 
+//     item[optionsValue].toLowerCase().includes(query.toLowerCase())
+//   );
+
+//   conteiner.innerHTML = createMarcup(result);
+// }
+//////////////////////////////////////////////////////////////////////////////////////
+// const lista = document.querySelector("#categories");
+// console.log(lista);
+// const categoriItems = lista.querySelectorAll(".item")
+
+// console.log(`Number of categories: ${categoriItems.length}`);
+//  categoriItems.forEach((items) => {
+//   const texto = items.querySelector("h2").textContent;
+//   const  elementLista = items.querySelectorAll("ul li");
+//   console.log(`Category: ${texto}`);
+//   console.log(`Elements: ${elementLista.length}`);
+
+
+//   elementLista.forEach(li => {
+//     li.style.border = "1px solid black";
+//     li.style.width = "360px";
+//     li.style.padding = "5px";
+//     li.style.margin = "8px 0";
+//     li.style.borderRadius = "3px";
+//     li.style.listStyleType = "none";
+//     lista.style.listStyleType = "none";
+//    });
+//  });
+////////////////////////////////////////////////////////////////////////////////
+// const images = [
+//     {
+//       url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
+//       alt: "White and Black Long Fur Cat",
+//     },
+//     {
+//       url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",
+//       alt: "Orange and White Koi Fish Near Yellow Koi Fish",
+//     },
+//     {
+//       url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260",
+//       alt: "Group of Horses Running",
+//     },
+//     {
+//       url: "https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272_1280.jpg",
+//       alt: "Alpine Spring Meadows",
+//     },
+//     {
+//       url: "https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255_1280.jpg",
+//       alt: "Nature Landscape",
+//     },
+//     {
+//       url: "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg",
+//       alt: "Lighthouse Coast Sea",
+//     },
+//   ];
+//   const galery = document.querySelector(".gallery");
+
+// function createMarkup(arr) {
+//   return arr.map((item) => `
+//   <li class="list-img">
+//   <img src="${item.url}" alt="${item.alt}" class="imagenes" width = "360px"/>
+//   </li>
+
+//   `).join("");
+// };
+// // galery.style.display = "flex";
+// // galery.style.flexWrap = "wrap";
+// // galery.style.gap = "48px";
+// // galery.style.rowGap = "48px";
+// // galery.style.listStyleType = "none";
+
+// galery.insertAdjacentHTML("beforeend", createMarkup(images));
+
+// const list = document.createElement("li")
+///////////////////////////////////////////////////////////////////////////
+// const heading = document.createElement("h1");
+
+// heading.classList.add("title");
+
+// heading.textContent = "Eso mi texsto" ;
+// console.log(heading);
+
+// const image = document.createElement("img");
+// image.classList.add("text");
+// image.src = "https://picsum.photos/id/11/320/240";
+// image.alt = "Nature";
+
+// console.log(image);
+///////////////HTML - 158//////////////////////////
+// const input = document.querySelector("#name-input");
+// const output = document.querySelector("#name-output");
+
+
+// function inputValue(event) {
+//     const value = event.target.value.trim();
+//      output.textContent = value === "" ? "Anonymous" : value;
+  
+// }
+
+// input.addEventListener("input", inputValue);
+////////////////////////////////////HTML - 165////////////////////////////////////////
+// const registerForm = document.querySelector(".login-form");
+
+
+// function handleSubmint(event) {
+//   event.preventDefault();
+//    const form = event.target.elements;
+//    const info = {
+//     email: form.email.value,
+//     password: form.password.value
+//    }
+//    if(!info.email || !info.password) {
+//     alert("All form fields must be filled in");
+//     return;
+//    }
+//    console.log(info);
+//    registerForm.reset();
+// }
+// registerForm.addEventListener("submit", handleSubmint);
+//////////////////////////////////////HTML - 1174/////////////////////////////////////////////////
+// function getRandomHexColor() {
+//   return `#${Math.floor(Math.random() * 16777215)
+//     .toString(16)
+//     .padStart(6, 0)}`;
+// }
+
+// const btn = document.querySelector(".change-color");
+// const color = document.querySelector(".color");
+// const fon = document.querySelector("body")
+
+// function cambioColor() {
+//   const randomColor = getRandomHexColor();
+//   fon.style.backgroundColor = randomColor;
+ 
+// color.textContent = randomColor;
+//   }
+// btn.addEventListener("click", cambioColor);
+////////////////////////////////////////////////////////////////////////////////////////
+// const user = {
+//   name: "Jacques Gluke",
+//   tag: "jgluke",
+//   stats: {
+//     followers: 5603,
+//     views: 4827,
+//     likes: 1308,
+//   },
+// };
+// const {name, tag, stats: {followers = 0, views: userViews = 0, likes: userLikes}} = user;
+
+// console.log(userLikes);
+///////////////////////////////////////////////////////////////////////////////////////
+
+
+// const color = [200, 255, 100];
+// const [red, ...otherColor] = color;
+// console.log(otherColor);
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+// function printFruits([firstFruit, secondFruit, thirdFruit]) {
+//   console.log(firstFruit, secondFruit, thirdFruit);
+// }
+
+// console.log(printFruits(["apple", "banana", "orange"])); // "apple banana orange"
+///////////////////////////////////////////HTML - 191   Домашнє завдання №8////////////////////////////////////////////////////////////////////
+const images = [
+    {
+      preview:
+        'https://cdn.pixabay.com/photo/2019/05/14/16/43/rchids-4202820__480.jpg',
+      original:
+        'https://cdn.pixabay.com/photo/2019/05/14/16/43/rchids-4202820_1280.jpg',
+      description: 'Hokkaido Flower',
+    },
+    {
+      preview:
+        'https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677__340.jpg',
+      original:
+        'https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677_1280.jpg',
+      description: 'Container Haulage Freight',
+    },
+    {
+      preview:
+        'https://cdn.pixabay.com/photo/2019/05/16/09/47/beach-4206785__340.jpg',
+      original:
+        'https://cdn.pixabay.com/photo/2019/05/16/09/47/beach-4206785_1280.jpg',
+      description: 'Aerial Beach View',
+    },
+    {
+      preview:
+        'https://cdn.pixabay.com/photo/2016/11/18/16/19/flowers-1835619__340.jpg',
+      original:
+        'https://cdn.pixabay.com/photo/2016/11/18/16/19/flowers-1835619_1280.jpg',
+      description: 'Flower Blooms',
+    },
+    {
+      preview:
+        'https://cdn.pixabay.com/photo/2018/09/13/10/36/mountains-3674334__340.jpg',
+      original:
+        'https://cdn.pixabay.com/photo/2018/09/13/10/36/mountains-3674334_1280.jpg',
+      description: 'Alpine Mountains',
+    },
+    {
+      preview:
+        'https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571__340.jpg',
+      original:
+        'https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571_1280.jpg',
+      description: 'Mountain Lake Sailing',
+    },
+    {
+      preview:
+        'https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272__340.jpg',
+      original:
+        'https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272_1280.jpg',
+      description: 'Alpine Spring Meadows',
+    },
+    {
+      preview:
+        'https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255__340.jpg',
+      original:
+        'https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255_1280.jpg',
+      description: 'Nature Landscape',
+    },
+    {
+      preview:
+        'https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843__340.jpg',
+      original:
+        'https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg',
+      description: 'Lighthouse Coast Sea',
+    },
+  ];
+  
+  
+const lista = document.querySelector(".gallery-segundo");
+lista.addEventListener("click", handleSubmint);
+
+function createMarkup(arr) {
+  return arr.map((item) => `
+    <li class="gallery-item">
+  <a class="gallery-link" href="large-image.jpg">
+    <img
+      class="gallery-image"
+      src="${item.preview}"
+      data-source="${item.original}"
+      alt="${item.description}"
+      width="360"
+    />
+  </a>
+</li>
+`).join("");
 };
 
+ function handleSubmint(event) {
+  event.preventDefault();
+  if(event.target)
+ }
 
+lista.insertAdjacentHTML("beforeend", createMarkup(images));
+// function createMarkup(arr) {
+//   return arr.map((item) => `
+//   <li class="list-img">
+//   <img src="${item.url}" alt="${item.alt}" class="imagenes" width = "360px"/>
+//   </li>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//   `).join("");
+// };
