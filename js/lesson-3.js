@@ -602,6 +602,9 @@
 
 // console.log(printFruits(["apple", "banana", "orange"])); // "apple banana orange"
 ///////////////////////////////////////////HTML - 191   Домашнє завдання №8////////////////////////////////////////////////////////////////////
+
+//////////////////////////////Потрібно доробити///////////////////////////////////
+
 const images = [
     {
       preview:
@@ -669,36 +672,90 @@ const images = [
   ];
   
   
-const lista = document.querySelector(".gallery-segundo");
-lista.addEventListener("click", handleSubmint);
+// const lista = document.querySelector(".gallery-segundo");
+// lista.addEventListener("click", handleSubmint);
 
-function createMarkup(arr) {
-  return arr.map((item) => `
-    <li class="gallery-item">
-  <a class="gallery-link" href="large-image.jpg">
-    <img
-      class="gallery-image"
-      src="${item.preview}"
-      data-source="${item.original}"
-      alt="${item.description}"
-      width="360"
-    />
-  </a>
-</li>
-`).join("");
-};
-
- function handleSubmint(event) {
-  event.preventDefault();
-  if(event.target)
- }
-
-lista.insertAdjacentHTML("beforeend", createMarkup(images));
 // function createMarkup(arr) {
 //   return arr.map((item) => `
-//   <li class="list-img">
-//   <img src="${item.url}" alt="${item.alt}" class="imagenes" width = "360px"/>
-//   </li>
-
-//   `).join("");
+//     <li class="gallery-item">
+//   <a class="gallery-link" href="large-image.jpg">
+//     <img
+//       class="gallery-image"
+//       src="${item.preview}"
+//       data-source="${item.original}"
+//       alt="${item.description}"
+//       width="360"
+//     />
+//   </a>
+// </li>
+// `).join("");
 // };
+
+//  function handleSubmint(event) {
+//   event.preventDefault();
+//   if(event.target)
+//  }
+
+// lista.insertAdjacentHTML("beforeend", createMarkup(images));
+// // function createMarkup(arr) {
+// //   return arr.map((item) => `
+// //   <li class="list-img">
+// //   <img src="${item.url}" alt="${item.alt}" class="imagenes" width = "360px"/>
+// //   </li>
+
+// //   `).join("");
+// // };
+ ///////////////////////////////////////////HTML - 125///////////////////////////////////////////////////////////////*
+
+//  const corentTopic = "animals";
+//  const liAnimal = document.querySelectorAll(`[data-topic="${corentTopic}"]`);
+//  liAnimal.forEach((li) => {
+  
+//   if(li.textContent === "Parrot") {
+//     li.style.color = "green";
+//     console.log("Це папуга!!!!");
+   
+//   }
+//  }
+
+// );
+///////////            ///////////////             ////////////////             ////////////////// 
+
+// const topicEl = document.querySelectorAll("[data-topic]");
+// console.log(topicEl);
+
+// topicEl.forEach((li) => {
+
+// if(li.dataset.topic === "animals") {
+//   li.style.color = "red";
+
+// } else {
+//   li.style.color = "green";
+  
+
+// }
+
+// });
+//////////////////////////          //////////////           ////////////        ////////////////
+
+const liEl = document.createElement("li");
+const titlEl = document.createElement("h3");
+const textEl = document.createElement("p");
+
+
+
+titlEl.textContent = "Делегування подій";
+textEl.textContent = "Capturing phase (занурення) — подія починається на window і тоне (проходить через усі елементи-предки) до найглибшого цільового елемента, на якому відбулася подія. На схемі подія — це клік, і capturing закінчується на елементі <button>.";
+
+liEl.appendChild(titlEl);
+liEl.appendChild(textEl);
+const listEl = document.querySelector("#categories");
+// listEl.append(liEl);
+// console.log(listEl);
+const marcap = `
+<li>
+   <h3>"Делегування подій"</h3>
+   <p>"Capturing phase (занурення) — подія починається на window і тоне (проходить через усі елементи-предки) до найглибшого цільового елемента, на якому відбулася подія. На схемі подія — це клік, і capturing закінчується на елементі <button>."</p>
+</li>
+`;
+liEl.insertAdjacentHTML("beforeend", marcap);
